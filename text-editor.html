@@ -1,0 +1,559 @@
+<!DOCTYPE html><html lang=en data-use-app-lang=false prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#"><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,requiresActiveX=true,chrome=1"><title>Text Editor | Add Text To Photos With BeFunky</title><meta name=description content="Add text to photos with BeFunky's text editor. It's super easy, customizable, and packed with all the fonts and options you could ever want."><meta name=application-name content=BeFunky><meta name=keywords content="Befunky, befunky.com, befunky photo effects, befunky photo editor, effects, editor, photo, photograph, picture, free, edit, editing, adjust, crop, online, online photo sharing, facebook, camera, digital, image, fix, photoshop, gimp, Photo Sharing, Share with Facebook, Share with Twitter, Share with Pinterest, share, Instant, Cartoonizer, Sketch, photo to art, text editor, online frames, overlays, Photo Effects, Photo Editor, facebook covers, facebook cover, covers, covers for facebook, facebook profile covers, first covers, fb covers, fb cover"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel="shortcut icon" type=image/x-icon href="https://images.befunky.com/site/favicon.png"><link rel=apple-touch-icon href="https://images.befunky.com/site/b-logo-dark-with-bg-180.png"> <link rel="preload" as="style" href="/web/css/screen.a0c919972e.css" /><link rel="preload" as="font" type="font/woff2" crossorigin href="/web/fonts/ui/work-sans-v3-latin-regular.woff2" /><link rel="stylesheet" href="/web/css/screen.a0c919972e.css" type="text/css"/><style id="inline-fonts">@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:300;font-display:block;src:local('Barlow Condensed Light'),local(BarlowCondensed-Light),url(/web/fonts/ui/barlow-condensed-v3-latin-300.woff2) format("woff2"),url(/web/fonts/ui/barlow-condensed-v3-latin-300.woff) format("woff")}@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:500;font-display:block;src:local('Barlow Condensed Medium'),local(BarlowCondensed-Medium),url(/web/fonts/ui/barlow-condensed-v3-latin-500.woff2) format("woff2"),url(/web/fonts/ui/barlow-condensed-v3-latin-500.woff) format("woff")}@font-face{font-family:'Poppins';font-style:normal;font-weight:400;font-display:block;src:local('Poppins Regular'),local(Poppins-Regular),url(/web/fonts/ui/poppins-v5-latin-regular.woff2) format("woff2"),url(/web/fonts/ui/poppins-v5-latin-regular.woff) format("woff")}@font-face{font-family:'Poppins';font-style:normal;font-weight:600;font-display:block;src:local('Poppins SemiBold'),local(Poppins-SemiBold),url(/web/fonts/ui/poppins-v5-latin-600.woff2) format("woff2"),url(/web/fonts/ui/poppins-v5-latin-600.woff) format("woff")}@font-face{font-family:'Work Sans';font-style:normal;font-weight:400;font-display:block;src:local('Work Sans'),local(WorkSans-Regular),url(/web/fonts/ui/work-sans-v3-latin-regular.woff2) format("woff2"),url(/web/fonts/ui/work-sans-v3-latin-regular.woff) format("woff")}@font-face{font-family:'Work Sans';font-style:normal;font-weight:600;font-display:block;src:local('Work Sans SemiBold'),local(WorkSans-SemiBold),url(/web/fonts/ui/work-sans-v3-latin-600.woff2) format("woff2"),url(/web/fonts/ui/work-sans-v3-latin-600.woff) format("woff")}</style><script>!function(){"use strict";!function(e,n,r){if(!("requestAnimationFrame"in e))return console.error("Unsupported browser: not sending errors to Sentry");if(e.onerror=function(e,t,o,i,s){r||n.push([e,t,o,i,s])},e.onunhandledrejection=function(e){if(!r){var t=e.reason;t&&(t=t.reason||t.message||t),n.push([t,e.type,JSON.stringify(e.reason)])}},e.Sentry&&"function"==typeof Sentry.captureException)return t();function t(){r||(r=!0,Sentry.init({dsn:"https://b2869f1592ed45e586418602b8f9fd0a@sentry.io/301341",release:BeFunky.Params.sentry_release_version,environment:BeFunky.Params.sentry_env,whitelistUrls:[/https?:\/\/(?:[\w\-_]+\.)?befunky\.com/,/d1oanepa5dm267\.cloudfront\.net/,/d75ljpmh88vxs\.cloudfront\.net/,/befunky\.global\.ssl\.fastly\.net/,/befunky\.freetls\.fastly\.net/,/fstly\.befunky\.com/],ignoreErrors:[/Error: Access is denied./,/SecurityError:.*/,"originalCreateNotification","canvas.contentDocument","MyApp_RemoveAllHighlights","http://tt.epicplay.com","Can't find variable: ZiteReader","jigsaw is not defined","ComboSearch is not defined","http://loading.retry.widdit.com/","atomicFindClose","fb_xd_fragment","bmi_SafeAddOnload","EBCallBackMessageReceived","conduitPage","Script error.","TypeError: no access","NotFoundError: Node was not found","Error calling method on NPObject!","TypeError: a.touchHover is not a function","TypeError: Unspecified error.","Object doesn't support property or method 'attachEvent'","Object doesn't support property or method 'CallFunction'"]}),e.onunhandledrejection=function(e){var n=e.reason;n&&(n=n.reason||n.message||n),Sentry.captureException(new Error(n),{extra:{type:e.type,reason:JSON.stringify(e.reason)}})},n.forEach(function(e){Sentry.captureException(e[4]||new Error(e[0]),{extra:{file:e[1],line:e[2],col:e[3]}})}))}e.onSentryLoaded=t}(window,[],!1)}();</script><script>!function(){"use strict";window.requestIdleCallback=window.requestIdleCallback||function(e){return setTimeout(function(){var t=Date.now();e({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-t))}})},1)},window.cancelIdleCallback=window.cancelIdleCallback||function(e){clearTimeout(e)},HTMLCanvasElement.prototype.toBlob||Object.defineProperty(HTMLCanvasElement.prototype,"toBlob",{value:function(e,t,n){for(var a=atob(this.toDataURL(t,n).split(",")[1]),o=a.length,i=new Uint8Array(o),l=0;l<o;l++)i[l]=a.charCodeAt(l);e(new Blob([i],{type:t||"image/png"}))}})}();</script><script>window.BeFunky = { Params: {"sentry_release_version":"st2019-11-13.18.21.47","sentry_env":"prod","mix_panel_id":"a688ef125ebff8a8e747a29fc81c071d","globalAssetsPath":"\/web\/","staticServerUrl":"\/","blogUrl":"https:\/\/www.befunky.com\/learn\/","globalImagesPath":"https:\/\/images.befunky.com\/","languageVersions":{"en":".5fc9117bf6","es":".aa69356cb3","pt":".a94b386d0d","fr":".237c6be585","de":".485a9ae0e3","it":".9f56fcdfca","tr":".fcea76a693","zh":".cc64aa8f1b","ja":".c1233f08de","ko":".9acb6f48fd","ru":".c3a6ac6f00","no":".e12196a476","ar":".be726200ab"},"isBeta":false,"isAdmin":false,"svgSpriteVersion":".3cf5b6c74a","enableUserTimings":false,"canUseWebapp":true,"siteUrl":"https:\/\/www.befunky.com\/","swfUrl":"https:\/\/d75ljpmh88vxs.cloudfront.net\/app\/","swfId":"BeFunky2015v1S2.0.6","swfVersion":"v1S2.0.6","swfMinVersion":"11.0.1","openurl":"","pricemonthly":6.99,"priceannual":59.88,"priceannual_divided":4.99,"strp_pck_yearly_nm":"befunky_plus_59_88","strp_pck_monthly_nm":"befunky_plus_6_99","IS_LC":false,"BFN_APP_HTML_VERSION":".e228e1e416","graphics_tag_version":"_v1558545832621","designer_template_tag_version":"_v3","backgroundRemovalAPI":"https:\/\/infgpuportland.befunky.com\/"} };BeFunky.Params.swfFlashVars = {swfpath:"https://d75ljpmh88vxs.cloudfront.net/app/", localepath:"/web/locale/",siteUri:"https://www.befunky.com/",serviceUri:"https://www.befunky.com//", forceReq:"true", reqUri:"https://upload.befunky.com/restserverNew.php", uplUri:"https://upload.befunky.com", templateData:"designer_templatesV1_25.json", showOneDrive:"0", forcejssave : 0, forcejsupload : 0, promptLang:"", secure:"1"};BeFunky.Params.frmNames = {lp:"lp", rp:"rp", fp:"fp", e:"_bfn__email", eag:"_bfn__emailAgain", u:"_bfn__userName", p:"_bfn__password", fpe:"_bfn__fp_email", prcs:"_bfn__process", csrf:"_bfn__CSRFtoken", cce:"_bfn__cc-email", ccp:"_bfn__cc-pass"};</script><script>!function(){"use strict";!function(){var e={global:t(),app:t(),scripts:t(),ga:t()};function t(){var e=void 0,t=void 0,n=new Promise(function(n,o){e=n,t=o});return n.resolve=e,n.reject=t,n}window.scriptHasLoaded=function(t){e[t].resolve()},window.onScriptLoad=function(t){return e[t]||Promise.reject("invalid_script_name")},window.deferredPromise=t,window.registerLazyComponent=i,window.registerLazyImageContainer=function(e){var t=document.getElementById(e),n=t.querySelectorAll("img");if(!n.length)return;i(t,function(){for(var e=0;e<n.length;e++)a(n[e])})},window.loadLazyImage=a;var n={},o=void 0;function r(e,t){o||(o=new IntersectionObserver(function(e,t){e.forEach(function(e){e.isIntersecting&&(t.unobserve(e.target),n[e.target.id](),delete n[e.target.id])})},{rootMargin:"400px 0px"})),n[e.id]=t,o.observe(e)}function i(e,t){if(!e||!e.id||"function"!=typeof t)throw new Error("Invalid lazy load initialization");if(!("IntersectionObserver"in window))return console.log("IntersectionObserver not supported: falling back to setTimeout"),setTimeout(t,1e3);r(e,t)}function a(e){["srcset","src"].forEach(function(t){var n=e.getAttribute("data-"+t);n&&(e[t]=n,e.removeAttribute("data-"+t))})}window.prismicButtonActions=[],window.onClickPrismicButton=function(e){window.prismicButtonActions.push({action:e,time:Date.now()})};var s=[];function u(e,t){setTimeout(function(){window.bf_eventTrack.apply(null,e)},t)}window.bf_eventTrack=function(){for(var e=arguments.length,t=Array(e),n=0;n<e;n++)t[n]=arguments[n];return s.push([].concat(t))},window.onScriptLoad("ga").then(function(){for(var e=0;e<s.length;e++)u(s[e],200*e)});var d=performance.now();document.addEventListener(window.PointerEvent?"pointermove":"mousemove",function(e){var t=performance.now();if(t-d<16)try{e.stopImmediatePropagation(),e.preventDefault()}catch(e){}else d=t},!0),window.setCookie=function(e,t,n){var o="";if(null!=n){var r=new Date;r.setDate(r.getDate()+n),o="; expires="+r.toUTCString()}document.cookie=e+"="+encodeURIComponent(t)+o+"; path=/"},window.getCookie=function(e){var t=document.cookie.match(new RegExp("(^| )"+e+"=([^;]+)"));if(t)return decodeURIComponent(t[2])},window.getCsToken=function(){return getCookie("CSRFtoken")||""};var c=null,w=getCookie("_bd_");if(w){try{c=JSON.parse(atob(w))}catch(e){setTimeout(function(){throw console.log('_bd_ cookie = "'+w+'"'),new Error("Malformed _bd_ cookie")},0)}setCookie("_bd_","",-1)}window.initialUser=c;var l=[],f=c||{error:"not_logged_in"};if(Object.defineProperty(window,"latestUserData",{get:function(){return f}}),window.onUserStatusChange=function(e){var t=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];l.push(e),t&&e(f)},window.updateUserStatus=function(e){f=e,l.forEach(function(t){return t(e)})},window.getUserStatus=function(){return new Promise(function(e){var t=new XMLHttpRequest;function n(t,n){e({error:t}),window.updateUserStatus({error:"not_logged_in"}),setTimeout(function(){throw console.log("User status:",n),new Error("Unable to get user status: "+t)},0)}t.open("POST",BeFunky.Params.siteUrl+"api/auth/status/",!0),t.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),t.setRequestHeader("X-CSRF-Token",getCsToken()),t.withCredentials=!0,t.onload=function(){var o=void 0;try{o=JSON.parse(t.responseText)}catch(e){}return o&&o.data&&o.data.email?(e(o),void window.updateUserStatus(o.data)):o&&"not_logged_in"===o.error?(e(o),void window.updateUserStatus(o)):void n("invalid_response",t.responseText||"(no response)")},t.onerror=function(){return n("request_failed","(XHR error)")},t.onabort=function(){return n("request_failed","(XHR abort)")},t.ontimeout=function(){return n("request_failed","(XHR timeout)")},t.send("CSRFtoken="+getCsToken())})},c)window.initialUserStatus=window.getUserStatus();else{var g=void 0;try{g=parseInt(localStorage.getItem("already_logged_in_error_time"))}catch(e){}g&&Date.now()-g<864e5?window.initialUserStatus=window.getUserStatus().then(function(e){return e.data?setTimeout(function(){throw console.log("User data:",JSON.stringify(e.data)),new Error("_bd_ not set but user is logged in")},0):p(),e}):(window.initialUserStatus=Promise.resolve(f),g&&p())}function p(){try{localStorage.removeItem("already_logged_in_error_time")}catch(e){}}}()}();</script><script>function __bfnDefferReady(){window.webGLSupportControl();BeFunky.disableAdsForPlusUsers();__documentReady();window.defferInit();};window._onLoadEnd = false; window._onLoad = function(fn){if(window._onLoadEnd === true){fn();} else {window.addEventListener('load', function(){window._onLoadEnd = true; fn();});}}; window._onLoad(function(){});window.ready = function(fn){if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){fn();} else {document.addEventListener("DOMContentLoaded", fn);}};window.ready(function(){ Promise.all([onScriptLoad("global"), initialUserStatus]).then(function() { if (typeof window.webGLSupportControl === "function") { __bfnDefferReady(); } else { console.log('webGLSupportControl is not a function. BeFunky keys:', JSON.stringify(Object.keys(BeFunky))); setTimeout(__bfnDefferReady, 1000); } }); });var $googleDriveState = null;</script> <meta property=og:title content="Text Editor | Add Text To Photos With BeFunky"><meta property=og:description content="Add text to photos with BeFunky's text editor. It's super easy, customizable, and packed with all the fonts and options you could ever want."><meta property=og:image content="https://images.befunky.com/prismic/bc81494ffd7e9dbfad80467f6506527029d61628.jpg?auto=format&fm=jpg&q=75&ixlib=js-1.4.1"><meta property=og:image:url content="https://images.befunky.com/prismic/bc81494ffd7e9dbfad80467f6506527029d61628.jpg?auto=format&fm=jpg&q=75&ixlib=js-1.4.1"><meta property=og:image:width content=""><meta property=og:image:height content=""><meta property=og:site_name content=BeFunky><meta property=og:type content=website><meta property=fb:app_id content=120991377944644><meta name=twitter:card content=summary_large_image><meta name=twitter:site content=@befunky><link href=https://plus.google.com/+befunky/ rel=publisher><meta name=apple-itunes-app content="app-id=442716817"><meta name=google content=notranslate>  <link rel=canonical href=https://www.befunky.com/features/text-editor/ ><meta property=og:url content="https://www.befunky.com/features/text-editor/">   <link href=https://www.befunky.com/features/text-editor/ rel=alternate hreflang=en><link href=https://www.befunky.com/pt/recursos/editor-de-texto/ rel=alternate hreflang=pt><link href=https://www.befunky.com/es/opciones/editor-de-texto/ rel=alternate hreflang=es><link href=https://www.befunky.com/features/text-editor/ rel=alternate hreflang=x-default>  </head><body><script>!function(){
+    var ua = navigator.userAgent;
+    if (/firefox/i.test(ua)) document.body.className = 'browser--firefox';
+    else if (/Edge\/\d+/.test(ua)) document.body.className = 'browser--microsoft-edge';
+    else if (/Trident|MSIE/.test(ua)) document.body.className = 'browser--internet-explorer';
+}();</script> <img id="modalBackgroundImg" src="" />
+<div id="main" style="width:100%; height:100%; left:-5000px; top:-5000px;">
+	<div style="left:-5000px; top:-5000px;" id="appl-for-flash"><div id="flashContainer"></div></div>
+	<div style="display:none;" id="bfn-app" class="bfn"></div>
+    <div id="svgContainer" style="display: none;"></div>
+</div>
+ <div id=site_root class="site-root site-root--enter-app-immediately">  <div class=site-root__loading-app><svg xmlns=http://www.w3.org/2000/svg width=355 height=109 viewBox="0 0 355 109"><g fill=none fill-rule=evenodd><g opacity=.8><path fill=#FFA101 d="M45.3 26.5V55L17.4 27.1a36.6 36.6 0 0 1 27.8-.6z"/><path fill=#F7ED00 d="M60.3 44L42.2 62.2V26.5A33.2 33.2 0 0 1 60.4 44z"/><path fill=#B5DD01 d="M64.8 53.5c0 4.5-.8 9-2.5 13.2H34L61.8 39c2 4.6 3 9.5 3 14.6z"/><path fill=#60C660 d="M62.4 64A33.2 33.2 0 0 1 45 82.2L26.7 64h35.7z"/><path fill=#668FD1 d="M49.7 83.6a36.6 36.6 0 0 1-27.8.6V55.7l27.8 28z"/><path fill=#9869BC d="M24.3 48.5v35.7A33.2 33.2 0 0 1 6.1 66.8l18.1-18.3z"/><path fill=#D35F99 d="M32.9 43.7L5.1 71.5a36.8 36.8 0 0 1-.6-27.8H33z"/><path fill=#E54838 d="M40.5 46.4H4.8a33.3 33.3 0 0 1 17.4-18.2l18.3 18.2z"/></g><path fill=#FFF d="M143 24.2h1c3.4-.2 6.8 2.4 7 6.1v33.8c0 3.5.4 6.4 1.3 8.7a17 17 0 0 0 3.7 5.8 16.4 16.4 0 0 0 5.5 3.3A22.4 22.4 0 0 0 177 81a19 19 0 0 0 6.3-5.3c3.7-4.8 5.2-9.6 5.2-15.8v-9c.3-3.8 1-7.6 2.3-11.2l.3-.8a25.4 25.4 0 0 1 2-4 27 27 0 0 1 5.2-5.7 20.5 20.5 0 0 1 6.6-3.6c2.6-1 5.4-1.4 8.2-1.4a24.1 24.1 0 0 1 8.6 1.5c2.7 1 5 2.5 7 4.5a18.6 18.6 0 0 1 4.6 7.4 26.8 26.8 0 0 1 1.6 9.8V79c0 1 1.5 4 5.5 4 2.7-.1 4.8-1.2 5.3-4V.3h4.5V58l26-22.6 6.7-5.7c1.9-1.4 7.7-5.2 12.5-5.5 3.7-.2 7.9 2.2 10.2 6.2.8 1.3 2 3.6 3 5.9l17.5 44 20.2-56.1h4.7l-27.5 75.1a14.6 14.6 0 0 1-3 5.2 11.6 11.6 0 0 1-8.5 4l-5 .1h-1V104h1c1.7 0 3.3 0 5-.3a7.6 7.6 0 0 0 3.2-.8 5.8 5.8 0 0 0 2.4-2 14.6 14.6 0 0 0 2-4l4.1-11-19.5-50.2c-4-7.5-9.2-12.4-24 2l-12.8 11.1L297 87.7h-5.8L264 52l-14 12v15.5a9.4 9.4 0 0 1-8.7 8.2h-1.6a9.1 9.1 0 0 1-9-7.5l-.1-.4c-.5-3-.2-11-.2-14.9V47.8a23 23 0 0 0-1.4-8.6c-.8-2.2-2.1-4.2-3.8-5.8a13.3 13.3 0 0 0-5.5-3.4 19.6 19.6 0 0 0-6.7-1c-3.4 0-6.3.6-8.7 2a18.3 18.3 0 0 0-6.4 5.2 28.6 28.6 0 0 0-5 17.2V61l-.1.7c-.3 4.4-.9 6-1.5 8.4a22.8 22.8 0 0 1-23 17.3c-3 0-6-.4-8.9-1.4a20.5 20.5 0 0 1-7-4.4 22.3 22.3 0 0 1-4.5-7.3 29.7 29.7 0 0 1-1.6-10V33.2c0-2.5-1.5-4.4-4.3-4.4h-6.4v58.9h-4.4V28.8h-12.4v-4.6h12.4V11.8c0-2.6.5-4.8 1.3-6.4a8.5 8.5 0 0 1 3.1-3.4A9.9 9.9 0 0 1 140 .6a33 33 0 0 1 6.8 0l3.1.7v4.4c-2.1-.4-4.3-.6-6.4-.7-3.6 0-5.4.7-6.2 1.7-.8 1-1.5 3-1.5 5.9v11.6h7.2z"/><g transform="translate(0 .3)"><ellipse cx=33.6 cy=54.8 stroke=#FFF stroke-width=4.8 rx=31.2 ry=31.5 /><path fill=#FFF d=M.3.3h4.2v56.8H.3z /><path fill=#FFF fill-rule=nonzero d="M112.4 73.5a16.6 16.6 0 0 1-4.5 5.8 20.9 20.9 0 0 1-14.5 4.8c-3.7 0-7-.7-9.8-2.1a20 20 0 0 1-7-5.8c-1.8-2.4-3-5.3-4-8.5-.9-3.2-1.1-6.6-1.1-10.2V57h48.7v-1.3l.1-1.4a37.9 37.9 0 0 0-1.7-11.5 28.7 28.7 0 0 0-5-9.5 23.7 23.7 0 0 0-8.2-6.4A25.8 25.8 0 0 0 94 24.4a26 26 0 0 0-12.2 2.7 25.5 25.5 0 0 0-8.5 7 30.7 30.7 0 0 0-5.2 10.4 43.3 43.3 0 0 0-1.7 12.2c0 4.2.5 8.3 1.7 12.4 1 3.6 2.7 7 5 9.9a23.9 23.9 0 0 0 8.4 6.6c3.3 1.6 7.3 2.4 11.8 2.4 7.3 0 13.2-1.9 17.6-5.7a26 26 0 0 0 6.4-8.8h-5zM72.9 43.7c1-3 2.4-5.6 4.3-8a21.7 21.7 0 0 1 7-5.4 21.3 21.3 0 0 1 9.6-2.1 19.8 19.8 0 0 1 15.9 7.4c1.8 2.3 3.3 5 4.2 7.9a36.8 36.8 0 0 1 1.6 9.4H71c.2-3.1.9-6.2 1.9-9.2z"/></g></g></svg> <span class=loading-spinner></span></div>  <header id=site_nav class="site-nav site-nav--not-signed-in site-nav--"><script>if (initialUser) document.getElementById('site_nav').className = 'site-nav site-nav--signed-in site-nav--' + (initialUser.pl === '1' ? ' site-nav--user-is-plus' : '');</script><div class=site-nav__inner><a href=https://www.befunky.com/ class="site-nav__item site-nav__item--logo" aria-label="BeFunky homepage">BeFunky</a><div class=site-nav__space></div><div class="site-nav__item site-nav__item--desktop site-nav__item--has-dropdown button" data-dropdown=create tabindex=0 data-bf=site-nav__create__dropdown data-lang=create>Create</div><div class="site-nav__item site-nav__item--desktop site-nav__item--has-dropdown button" data-dropdown=learn tabindex=0 data-bf=site-nav__learn__dropdown data-lang=learn>Learn</div><a class="site-nav__item site-nav__item--desktop site-nav__link button" data-bf=site-nav__support__button data-lang=support href=https://support.befunky.com/hc/en-us>Support</a><div class=site-nav__space></div><button onclick="onClickPrismicButton('sign_in')" class="site-nav__item site-nav__item--desktop site-nav__item--sign-in site-nav__link button" data-bf=nav__sign-in data-lang=sign_in>Sign In</button> <a href=https://www.befunky.com/create/text-editor/ data-route data-lang=get_started class="site-nav__item site-nav__item--get-started site-nav__item--desktop site-nav__button button button--dark-blue">Get Started</a><div class="site-nav__item site-nav__item--desktop site-nav__item--has-dropdown site-nav__item--account button" data-dropdown=account tabindex=0 data-bf=site-nav__account-dropdown><span class=site-nav__user-circle></span></div><script>if (initialUser) document.querySelector('.site-nav__user-circle').textContent = initialUser.user_name[0].toUpperCase();</script><button class="site-nav__item site-nav__item--mobile site-nav__hamburger button button--icon" aria-label="Open menu"><span></span> <span></span> <span></span></button></div><div class="site-nav__dropdown-root site-nav__dropdown-root--inactive"><div class=site-nav__dropdown-arrow></div><div class=site-nav__dropdown-bg></div><div class=site-nav__dropdown-container><div class=site-nav__dropdown-section data-dropdown=create><section class=site-nav__dropdown-content style="width: 23rem"><a href=https://www.befunky.com/create/ data-route class=site-nav__dropdown-link><h6 class=site-nav__dropdown-heading data-bf=site-nav__create-dropdown__photo-editor data-lang=photo_editor>Photo Editor</h6><p class=site-nav__dropdown-description data-lang=get_started_editor></p></a><a href=https://www.befunky.com/create/collage/ data-route class=site-nav__dropdown-link><h6 class=site-nav__dropdown-heading data-bf=site-nav__create-dropdown__collage-maker data-lang=collage_maker>Collage Maker</h6><p class=site-nav__dropdown-description data-lang=get_started_collage></p></a><a href=https://www.befunky.com/create/designer/ data-route class=site-nav__dropdown-link><h6 class=site-nav__dropdown-heading data-bf=site-nav__create-dropdown__graphic-designer data-lang=graphic_designer>Graphic Designer</h6><p class=site-nav__dropdown-description data-lang=get_started_designer></p></a></section></div><div class=site-nav__dropdown-section data-dropdown=learn><section class=site-nav__dropdown-content style="width: 24rem"><a href=https://www.befunky.com/getting-started/ class=site-nav__dropdown-link><h6 class=site-nav__dropdown-heading data-lang=getting_started>Getting Started</h6><p class=site-nav__dropdown-description data-lang=master_the_basics>Master the basics of BeFunky</p></a><a href=https://www.befunky.com/features/ class=site-nav__dropdown-link><h6 class=site-nav__dropdown-heading data-lang=features>Features</h6><p class=site-nav__dropdown-description data-lang=learn_what_all>Learn what all you can do with BeFunky</p></a><a href=https://www.befunky.com/features/befunky-plus/ class=site-nav__dropdown-link><h6 class=site-nav__dropdown-heading data-lang=befunky_plus>BeFunky Plus</h6><p class=site-nav__dropdown-description data-lang=unlock_features>Unlock our most powerful features</p></a><a href="https://www.befunky.com/learn/" class=site-nav__dropdown-link><h6 class=site-nav__dropdown-heading data-lang=learn_befunky>Learn BeFunky</h6><p class=site-nav__dropdown-description data-lang=tips_to_learn>Photo editing and design tips and techniques</p></a><a href="https://www.befunky.com/learn/tutorials/" class=site-nav__dropdown-link><h6 class=site-nav__dropdown-heading data-lang=tutorials>Tutorials</h6><p class=site-nav__dropdown-description data-lang=tutorial_guides>Step-by-step guides for all our features</p></a><a href="https://www.befunky.com/learn/inspiration/" class=site-nav__dropdown-link><h6 class=site-nav__dropdown-heading data-lang=inspiration>Inspiration</h6><p class=site-nav__dropdown-description data-lang=get_inspired>Projects to inspire your creativity</p></a><a href="https://www.befunky.com/learn/whats-new/" class=site-nav__dropdown-link><h6 class=site-nav__dropdown-heading data-lang=whats_new>What's New</h6><p class=site-nav__dropdown-description data-lang=updates>Updates about our new features</p></a></section></div><div class=site-nav__dropdown-section data-dropdown=account data-arrow-offset=-16><section class=site-nav__dropdown-content style="width: 15rem;"><a href=https://www.befunky.com/my-account/ class=site-nav__dropdown-link><string data-lang=my_account>My Account</string><span class=site-nav__user-email></span> </a><a href=https://www.befunky.com/myphotos/ class=site-nav__dropdown-link><string data-lang=my_photos>My Photos</string></a><a href=https://support.befunky.com/hc/en-us class=site-nav__dropdown-link><string data-lang=help_support>Help/Support</string></a><button onclick="onClickPrismicButton('sign_out')" class="site-nav__item site-nav__item--desktop site-nav__dropdown-link--sign-out site-nav__link button" data-lang=sign_out>Sign Out</button> <button onclick="onClickPrismicButton('upgrade')" class="button button--dark-blue button--fullwidth site-nav__upgrade-button" style="margin-top: .25rem;"><string data-lang=upgrade>Upgrade</string></button></section></div></div></div><div class=site-nav__popup-root><button class="site-nav__popup-close button button--icon" aria-label="Close menu"><svg class=icon><use xmlns:xlink=http://www.w3.org/1999/xlink xlink:href=#global-cancel-icon></use></svg></button><section class=site-nav__popup-content><button class="button button--x-large site-nav__popup-item site-nav__popup-button site-nav__popup-accordion site-nav__popup-accordion--open" tabindex=0><string data-lang=create>Create</string><svg class="icon icon-size-small icon--arrow"><use xmlns:xlink=http://www.w3.org/1999/xlink xlink:href=#global-arrow-up-icon></use></svg></button><div class=site-nav__popup-accordion-items><a href=https://www.befunky.com/create/ data-route class="button button--link button--x-large site-nav__popup-button" data-lang=photo_editor>Photo Editor</a> <a href=https://www.befunky.com/create/collage/ data-route class="button button--link button--x-large site-nav__popup-button" data-lang=collage_maker>Collage Maker</a> <a href=https://www.befunky.com/create/designer/ data-route class="button button--link button--x-large site-nav__popup-button" data-lang=graphic_designer>Graphic Designer</a></div><button class="button button--x-large site-nav__popup-item site-nav__popup-button site-nav__popup-accordion" tabindex=0><string data-lang=learn>Learn</string><svg class="icon icon-size-small icon--arrow"><use xmlns:xlink=http://www.w3.org/1999/xlink xlink:href=#global-arrow-up-icon></use></svg></button><div class=site-nav__popup-accordion-items><a href=https://www.befunky.com/getting-started/ class="button button--link button--x-large site-nav__popup-button" data-lang=getting_started>Getting Started</a> <a href=https://www.befunky.com/features/ class="button button--link button--x-large site-nav__popup-button" data-lang=features>Features</a> <a href=https://www.befunky.com/features/befunky-plus/ class="button button--link button--x-large site-nav__popup-button" data-lang=befunky_plus>BeFunky Plus</a> <a href="https://www.befunky.com/learn/" class="button button--link button--x-large site-nav__popup-button" data-lang=learn>Learn</a> <a href="https://www.befunky.com/learn/tutorials/" class="button button--link button--x-large site-nav__popup-button" data-lang=tutorials>Tutorials</a> <a href="https://www.befunky.com/learn/inspiration/" class="button button--link button--x-large site-nav__popup-button" data-lang=inspiration>Inspiration</a> <a href="https://www.befunky.com/learn/whats-new/" class="button button--link button--x-large site-nav__popup-button" data-lang=whats_new>What's New</a></div><a href=https://support.befunky.com/hc/en-us class="button button--x-large site-nav__popup-item site-nav__popup-button" data-lang=support>Support</a> <button onclick="onClickPrismicButton('sign_in')" class="button button--x-large site-nav__popup-item site-nav__popup-button site-nav__popup-button--sign-in" data-lang=sign_in>Sign In</button><div class=site-nav__popup-account><button class="button button--x-large site-nav__popup-item site-nav__popup-button site-nav__popup-accordion" tabindex=0><string data-lang=account>Account</string><svg class="icon icon-size-small icon--arrow"><use xmlns:xlink=http://www.w3.org/1999/xlink xlink:href=#global-arrow-up-icon></use></svg></button><div class=site-nav__popup-accordion-items><a href=https://www.befunky.com/my-account/ class="button button--link button--x-large site-nav__popup-button site-nav__popup-button--my-account"><string data-lang=my_account>My Account</string><span class=site-nav__user-email></span> </a><a href=https://www.befunky.com/myphotos/ class="button button--link button--x-large site-nav__popup-button" data-lang=my_photos>My Photos</a> <a href=https://support.befunky.com/hc/en-us class="button button--link button--x-large site-nav__popup-button" data-lang=help_support>Help/Support</a> <button onclick="onClickPrismicButton('sign_out')" class="button button--link button--x-large site-nav__popup-button site-nav__popup-button--sign-out" data-lang=sign_out>Sign Out</button></div></div><a href=https://www.befunky.com/create/text-editor/ data-route data-lang=get_started class="button button--x-large button--dark-blue button--fullwidth site-nav__popup-cta">Get Started</a></section></div></header><main><section id=add-text-to-photos-and-bring-new-meaning-to-your-images class="section section--background-turquoise section--first section--figure-align-overflow-right"><div class="section__graphic section__graphic--right"></div><div class=section__inner><div class=section__text><h1 class=section__heading>Add Text to Photos and Bring New Meaning to Your Images</h1><p>Our text editor comes packed full of fonts, styles, and everything else you&#39;ll need to add text to photos!</p><div class="section__buttons button-group"><a href=https://www.befunky.com/create/text-editor/ data-route class="button button--dark-blue button--xx-large">Get Started</a></div></div><figure class="section__figure section__figure--align-overflow-right"><img alt="Add Text To Photos With BeFunky's Text Editor" class=section__image src="https://images.befunky.com/prismic/9e19d0f553eeadc85d17a712a1d5b2e7461cb256_en-text-editor-img.jpg?auto=format&fm=jpg&q=75&w=849&ixlib=js-1.4.1" width=849 height=500 srcset="https://images.befunky.com/prismic/9e19d0f553eeadc85d17a712a1d5b2e7461cb256_en-text-editor-img.jpg?auto=format&fm=jpg&q=75&w=360&ixlib=js-1.4.1 360w, https://images.befunky.com/prismic/9e19d0f553eeadc85d17a712a1d5b2e7461cb256_en-text-editor-img.jpg?auto=format&fm=jpg&q=75&w=540&ixlib=js-1.4.1 540w, https://images.befunky.com/prismic/9e19d0f553eeadc85d17a712a1d5b2e7461cb256_en-text-editor-img.jpg?auto=format&fm=jpg&q=75&w=800&ixlib=js-1.4.1 800w, https://images.befunky.com/prismic/9e19d0f553eeadc85d17a712a1d5b2e7461cb256_en-text-editor-img.jpg?auto=format&fm=jpg&q=75&w=1274&ixlib=js-1.4.1 1274w" sizes="
+            (max-width: 359px) 100vw,
+            (max-width: 956px) 80vw,
+            849px
+        "></figure></div></section><section id=our-fonts class="section section--background-none section--figure-align-left"><div class=section__inner><div class=section__text><h2 class=section__heading>Our Fonts</h2><p>We provide plenty of extra funky fonts in our Text Editor that you won&#39;t be able to find anywhere else. Hammer it out with Carbontype, an old-fashioned typeface that will give your photos a classic look and feel that&#39;s sure to charm. Curious about our Luckiest Guy font? The name says it all. This lively looking font is perfect for adding a fun, quirky message to your photos. And with over 50 different fonts, you&#39;ll be able to find the perfect one for every occasion.</p></div><figure class="section__figure section__figure--align-left section__figure--omit-shadow"><img alt="Use BeFunky's Text Editor to Add Text to Photos" class=section__image src="data:image/svg+xml,%3Csvg style='background:%23EDEDED' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1472 1162'%3E%3C/svg%3E" width=736 height=581 sizes="
+            (max-width: 359px) 100vw,
+            (max-width: 956px) 80vw,
+            736px
+        " data-src="https://images.befunky.com/prismic/c26ed8b078ce2a0788cb780f75a59ed3e665213b_landing-text-editor-2.png?auto=format&fm=jpg&q=75&w=736&ixlib=js-1.4.1" data-srcset="https://images.befunky.com/prismic/c26ed8b078ce2a0788cb780f75a59ed3e665213b_landing-text-editor-2.png?auto=format&fm=jpg&q=75&w=360&ixlib=js-1.4.1 360w, https://images.befunky.com/prismic/c26ed8b078ce2a0788cb780f75a59ed3e665213b_landing-text-editor-2.png?auto=format&fm=jpg&q=75&w=540&ixlib=js-1.4.1 540w, https://images.befunky.com/prismic/c26ed8b078ce2a0788cb780f75a59ed3e665213b_landing-text-editor-2.png?auto=format&fm=jpg&q=75&w=800&ixlib=js-1.4.1 800w, https://images.befunky.com/prismic/c26ed8b078ce2a0788cb780f75a59ed3e665213b_landing-text-editor-2.png?auto=format&fm=jpg&q=75&w=1104&ixlib=js-1.4.1 1104w"></figure></div></section><script>registerLazyImageContainer('our-fonts');</script><section id=your-fonts class="section section--background-none section--figure-align-right"><div class=section__inner><div class=section__text><h2 class=section__heading>Your Fonts</h2><p>These fonts might seem a little more familiar. Our Text Editor gives you full access to all the fonts on your device. Go for everyone&#39;s favorite, Helvetica, which looks great anywhere and is always clear and easy to read. Keep it classic and use Times, which you can never go wrong with. Or explore the unknown, and install any font you&#39;d like to your device and it&#39;ll be right there waiting for you in BeFunky&#39;s Text Editor.</p></div><figure class="section__figure section__figure--align-right section__figure--omit-shadow"><img alt="Add Text to Photos using BeFunky's Text Editor" class=section__image src="data:image/svg+xml,%3Csvg style='background:%23EDEDED' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1472 1102'%3E%3C/svg%3E" width=736 height=551 sizes="
+            (max-width: 359px) 100vw,
+            (max-width: 956px) 80vw,
+            736px
+        " data-src="https://images.befunky.com/prismic/1bfa4aaa59077dc285d91625521640d793000f11_landing-text-editor-3.png?auto=format&fm=jpg&q=75&w=736&ixlib=js-1.4.1" data-srcset="https://images.befunky.com/prismic/1bfa4aaa59077dc285d91625521640d793000f11_landing-text-editor-3.png?auto=format&fm=jpg&q=75&w=360&ixlib=js-1.4.1 360w, https://images.befunky.com/prismic/1bfa4aaa59077dc285d91625521640d793000f11_landing-text-editor-3.png?auto=format&fm=jpg&q=75&w=540&ixlib=js-1.4.1 540w, https://images.befunky.com/prismic/1bfa4aaa59077dc285d91625521640d793000f11_landing-text-editor-3.png?auto=format&fm=jpg&q=75&w=800&ixlib=js-1.4.1 800w, https://images.befunky.com/prismic/1bfa4aaa59077dc285d91625521640d793000f11_landing-text-editor-3.png?auto=format&fm=jpg&q=75&w=1104&ixlib=js-1.4.1 1104w"></figure></div></section><script>registerLazyImageContainer('your-fonts');</script><section id=personalized-fonts class="section section--background-none section--figure-align-left"><div class=section__inner><div class=section__text><h2 class=section__heading>Personalized Fonts</h2><p>No need to learn Photoshop. The BeFunky <a href=https://www.befunky.com/features/photo-editor/ >Photo Editor</a> offers premium text editing features, without any of the hassle. Add background color and make your font stand out, while complimenting the tones in your photograph. Use a text outline, and give it an inverted look. Apply text wrapping, and watch as the words flow around your image. Keep everything in position with snapping. Or, resize and rotate your typeface till it looks just right.</p></div><figure class="section__figure section__figure--align-left section__figure--omit-shadow"><img alt="Use BeFunky's Text Editor to Add Text to Photos" class=section__image src="data:image/svg+xml,%3Csvg style='background:%23EDEDED' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1472 1068'%3E%3C/svg%3E" width=736 height=534 sizes="
+            (max-width: 359px) 100vw,
+            (max-width: 956px) 80vw,
+            736px
+        " data-src="https://images.befunky.com/prismic/8da559ded89273e3a6988584baeb4790bb767282_landing-text-editor-4.png?auto=format&fm=jpg&q=75&w=736&ixlib=js-1.4.1" data-srcset="https://images.befunky.com/prismic/8da559ded89273e3a6988584baeb4790bb767282_landing-text-editor-4.png?auto=format&fm=jpg&q=75&w=360&ixlib=js-1.4.1 360w, https://images.befunky.com/prismic/8da559ded89273e3a6988584baeb4790bb767282_landing-text-editor-4.png?auto=format&fm=jpg&q=75&w=540&ixlib=js-1.4.1 540w, https://images.befunky.com/prismic/8da559ded89273e3a6988584baeb4790bb767282_landing-text-editor-4.png?auto=format&fm=jpg&q=75&w=800&ixlib=js-1.4.1 800w, https://images.befunky.com/prismic/8da559ded89273e3a6988584baeb4790bb767282_landing-text-editor-4.png?auto=format&fm=jpg&q=75&w=1104&ixlib=js-1.4.1 1104w"></figure></div></section><script>registerLazyImageContainer('personalized-fonts');</script><section id=add-text-to-photos-in-any-font class="section section--background-none"><div class="section__inner section__inner--grid"><div class="section__text section__text--centered"><h2 class=section__heading>Add Text to Photos in Any Font</h2><div class=section__sub-heading><p>Whatever look you&#39;re going for, it&#39;s never been easier to add text to photos, designs, and collages than with our Text Editor.</p></div></div><div class="section__grid section__grid--3-per-row section__grid--has-at-least-2 section__grid--has-at-least-3"><div class="section__grid-item grid-item grid-item--3"><figure class=grid-item__figure><img alt=Captured class=grid-item__image src="data:image/svg+xml,%3Csvg style='background:%23EDEDED' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 404'%3E%3C/svg%3E" width=540 height=303 sizes="
+            (max-width: 359px) 100vw,
+            (max-width: 956px) 80vw,
+            540px
+        " data-src="https://images.befunky.com/prismic/f482e6416148d6abe60dc3b35ca5694167d058e6_landing-text-editor-features-1.jpg?auto=format&fm=jpg&q=75&w=540&ixlib=js-1.4.1" data-srcset="https://images.befunky.com/prismic/f482e6416148d6abe60dc3b35ca5694167d058e6_landing-text-editor-features-1.jpg?auto=format&fm=jpg&q=75&w=360&ixlib=js-1.4.1 360w, https://images.befunky.com/prismic/f482e6416148d6abe60dc3b35ca5694167d058e6_landing-text-editor-features-1.jpg?auto=format&fm=jpg&q=75&w=540&ixlib=js-1.4.1 540w, https://images.befunky.com/prismic/f482e6416148d6abe60dc3b35ca5694167d058e6_landing-text-editor-features-1.jpg?auto=format&fm=jpg&q=75&w=800&ixlib=js-1.4.1 800w"></figure><div class=grid-item__text><h3 class="grid-item__heading h6">Capture It</h3><p>When you capture the perfect moment, you need the perfect font to go with it. This one will make a statement you can&#39;t ignore with big, bold, all capitals letters.</p></div></div><div class="section__grid-item grid-item grid-item--3"><figure class=grid-item__figure><img alt=Love class=grid-item__image src="data:image/svg+xml,%3Csvg style='background:%23EDEDED' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 404'%3E%3C/svg%3E" width=540 height=303 sizes="
+            (max-width: 359px) 100vw,
+            (max-width: 956px) 80vw,
+            540px
+        " data-src="https://images.befunky.com/prismic/c06350adfc8c13940cd3dcb20b0b66da464deb7d_landing-text-editor-features-2.jpg?auto=format&fm=jpg&q=75&w=540&ixlib=js-1.4.1" data-srcset="https://images.befunky.com/prismic/c06350adfc8c13940cd3dcb20b0b66da464deb7d_landing-text-editor-features-2.jpg?auto=format&fm=jpg&q=75&w=360&ixlib=js-1.4.1 360w, https://images.befunky.com/prismic/c06350adfc8c13940cd3dcb20b0b66da464deb7d_landing-text-editor-features-2.jpg?auto=format&fm=jpg&q=75&w=540&ixlib=js-1.4.1 540w, https://images.befunky.com/prismic/c06350adfc8c13940cd3dcb20b0b66da464deb7d_landing-text-editor-features-2.jpg?auto=format&fm=jpg&q=75&w=800&ixlib=js-1.4.1 800w"></figure><div class=grid-item__text><h3 class="grid-item__heading h6">Dancing Script</h3><p>Soft and elegant, this font will romanticize almost any photograph. Perfect for black and white pictures, it adds just the right amount of sophistication.</p></div></div><div class="section__grid-item grid-item grid-item--3"><figure class=grid-item__figure><img alt=Lucky class=grid-item__image src="data:image/svg+xml,%3Csvg style='background:%23EDEDED' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 404'%3E%3C/svg%3E" width=540 height=303 sizes="
+            (max-width: 359px) 100vw,
+            (max-width: 956px) 80vw,
+            540px
+        " data-src="https://images.befunky.com/prismic/23e0806fee5d4f57374f55780c487ddeed0d1f5c_landing-text-editor-features-3.jpg?auto=format&fm=jpg&q=75&w=540&ixlib=js-1.4.1" data-srcset="https://images.befunky.com/prismic/23e0806fee5d4f57374f55780c487ddeed0d1f5c_landing-text-editor-features-3.jpg?auto=format&fm=jpg&q=75&w=360&ixlib=js-1.4.1 360w, https://images.befunky.com/prismic/23e0806fee5d4f57374f55780c487ddeed0d1f5c_landing-text-editor-features-3.jpg?auto=format&fm=jpg&q=75&w=540&ixlib=js-1.4.1 540w, https://images.befunky.com/prismic/23e0806fee5d4f57374f55780c487ddeed0d1f5c_landing-text-editor-features-3.jpg?auto=format&fm=jpg&q=75&w=800&ixlib=js-1.4.1 800w"></figure><div class=grid-item__text><h3 class="grid-item__heading h6">Luckiest Guy</h3><p>This font has a lot of personality. It&#39;s fun, it&#39;s confident and it screams for attention. Use it next time you add text to a photo, and it will be sure to make an impact.</p></div></div><div class="section__grid-item grid-item grid-item--3"><figure class=grid-item__figure><img alt=Carbon class=grid-item__image src="data:image/svg+xml,%3Csvg style='background:%23EDEDED' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 404'%3E%3C/svg%3E" width=540 height=303 sizes="
+            (max-width: 359px) 100vw,
+            (max-width: 956px) 80vw,
+            540px
+        " data-src="https://images.befunky.com/prismic/89639deeff17ff8a78e6eca5750df8b390c32ca5_landing-text-editor-features-4.jpg?auto=format&fm=jpg&q=75&w=540&ixlib=js-1.4.1" data-srcset="https://images.befunky.com/prismic/89639deeff17ff8a78e6eca5750df8b390c32ca5_landing-text-editor-features-4.jpg?auto=format&fm=jpg&q=75&w=360&ixlib=js-1.4.1 360w, https://images.befunky.com/prismic/89639deeff17ff8a78e6eca5750df8b390c32ca5_landing-text-editor-features-4.jpg?auto=format&fm=jpg&q=75&w=540&ixlib=js-1.4.1 540w, https://images.befunky.com/prismic/89639deeff17ff8a78e6eca5750df8b390c32ca5_landing-text-editor-features-4.jpg?auto=format&fm=jpg&q=75&w=800&ixlib=js-1.4.1 800w"></figure><div class=grid-item__text><h3 class="grid-item__heading h6">Carbon Type</h3><p>Belonging to the typewriter family, this retro font is the perfect accent to your vintage-style photographs. It might even make you feel a little nostalgic.</p></div></div><div class="section__grid-item grid-item grid-item--3"><figure class=grid-item__figure><img alt="American Typewriter" class=grid-item__image src="data:image/svg+xml,%3Csvg style='background:%23EDEDED' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 404'%3E%3C/svg%3E" width=540 height=303 sizes="
+            (max-width: 359px) 100vw,
+            (max-width: 956px) 80vw,
+            540px
+        " data-src="https://images.befunky.com/prismic/a5cf0bf6be55ffb54627e62ec436fcc98ce64ac9_landing-text-editor-features-5.jpg?auto=format&fm=jpg&q=75&w=540&ixlib=js-1.4.1" data-srcset="https://images.befunky.com/prismic/a5cf0bf6be55ffb54627e62ec436fcc98ce64ac9_landing-text-editor-features-5.jpg?auto=format&fm=jpg&q=75&w=360&ixlib=js-1.4.1 360w, https://images.befunky.com/prismic/a5cf0bf6be55ffb54627e62ec436fcc98ce64ac9_landing-text-editor-features-5.jpg?auto=format&fm=jpg&q=75&w=540&ixlib=js-1.4.1 540w, https://images.befunky.com/prismic/a5cf0bf6be55ffb54627e62ec436fcc98ce64ac9_landing-text-editor-features-5.jpg?auto=format&fm=jpg&q=75&w=800&ixlib=js-1.4.1 800w"></figure><div class=grid-item__text><h3 class="grid-item__heading h6">American Typewriter</h3><p>Hammer it out with this old fashioned text, and give your next snapshot a classic look and feel that will be sure to charm.</p></div></div><div class="section__grid-item grid-item grid-item--3"><figure class=grid-item__figure><img alt=Oscura class=grid-item__image src="data:image/svg+xml,%3Csvg style='background:%23EDEDED' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 404'%3E%3C/svg%3E" width=540 height=303 sizes="
+            (max-width: 359px) 100vw,
+            (max-width: 956px) 80vw,
+            540px
+        " data-src="https://images.befunky.com/prismic/d2b9bd63863b52789825cc4434b6969cf3f7dcbb_landing-text-editor-features-6.jpg?auto=format&fm=jpg&q=75&w=540&ixlib=js-1.4.1" data-srcset="https://images.befunky.com/prismic/d2b9bd63863b52789825cc4434b6969cf3f7dcbb_landing-text-editor-features-6.jpg?auto=format&fm=jpg&q=75&w=360&ixlib=js-1.4.1 360w, https://images.befunky.com/prismic/d2b9bd63863b52789825cc4434b6969cf3f7dcbb_landing-text-editor-features-6.jpg?auto=format&fm=jpg&q=75&w=540&ixlib=js-1.4.1 540w, https://images.befunky.com/prismic/d2b9bd63863b52789825cc4434b6969cf3f7dcbb_landing-text-editor-features-6.jpg?auto=format&fm=jpg&q=75&w=800&ixlib=js-1.4.1 800w"></figure><div class=grid-item__text><h3 class="grid-item__heading h6">Komika Axis</h3><p>Always easy to read, this striking font is simple enough for most projects, yet still has an edge. You can be confident that it will look great anywhere.</p></div></div></div></div></section><script>registerLazyImageContainer('add-text-to-photos-in-any-font');</script><section id=how-to-add-text-to-a-picture-in-4-steps class="section section--background-none"><div class="section__inner section__inner--grid"><div class="section__text section__text--centered"><h2 class=section__heading>How to Add Text to a Picture in 4 Steps</h2><div class=section__sub-heading><p>Our Text Editor makes it easy to add text to photos</p></div></div><div class="section__grid section__grid--4-per-row section__grid--has-at-least-2 section__grid--has-at-least-3 section__grid--has-at-least-4"><div class="section__grid-item grid-item grid-item--4"><div class=grid-item__text><div class="grid-item__step h4 heading">01.</div><h3 class="grid-item__heading h6">Select Your Font</h3><p>Select a font from Ours or Yours, then start typing.</p></div></div><div class="section__grid-item grid-item grid-item--4"><div class=grid-item__text><div class="grid-item__step h4 heading">02.</div><h3 class="grid-item__heading h6">Customize Text</h3><p>Change your font color, add a background, an outline, and more.</p></div></div><div class="section__grid-item grid-item grid-item--4"><div class=grid-item__text><div class="grid-item__step h4 heading">03.</div><h3 class="grid-item__heading h6">Transform Text</h3><p>Move, rotate, and resize your text using the textbox grabs.</p></div></div><div class="section__grid-item grid-item grid-item--4"><div class=grid-item__text><div class="grid-item__step h4 heading">04.</div><h3 class="grid-item__heading h6">Flatten Text</h3><p>Click &#39;Flatten Layers&#39; when you&#39;re done customizing your text.</p></div></div></div></div></section><script>registerLazyImageContainer('how-to-add-text-to-a-picture-in-4-steps');</script><section id=add-text-to-photos-with-befunkys-text-editor class="section section--background-turquoise section--last section--cta"><div class=section__inner><div class="section__text section__text--centered"><h2 class=section__heading>Add Text to Photos with BeFunky's Text Editor</h2><div class="section__buttons button-group"><a href=https://www.befunky.com/create/text-editor/ data-route class="button button--dark-blue button--xx-large">Get Started</a></div></div></div></section></main><script>window.deepLinkRouteData = {"design":{"type":"designer","availability":"web_app_only","trackingID":"DESIGNER"},"photo-editor":{"type":"photoeditor","availability":"web_mobile_apps","trackingID":"PHOTO-EDITOR"},"collage":{"type":"collage","availability":"web_mobile_apps","trackingID":"COLLAGE"},"foto-a-caricatura":{"type":"digital-art","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/sample_image_digital_art.jpg","availability":"web_visionn_app","trackingID":"PHOTO-TO-CARTOON"},"collage-maker":{"type":"collage","availability":"web_mobile_apps","trackingID":"COLLAGE-MAKER"},"photo-to-cartoon":{"type":"digital-art","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/sample_image_digital_art.jpg","availability":"web_visionn_app","trackingID":"PHOTO-TO-CARTOON"},"colagem":{"type":"collage","availability":"web_mobile_apps","trackingID":"COLLAGE"},"graphics":{"type":"graphics","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/balloon-girl-min.jpg","availability":"web_mobile_apps","trackingID":"GRAPHICS"},"foto-para-arte":{"type":"photo-to-art","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/sample_image_digital_art.jpg","availability":"web_visionn_app","trackingID":"PHOTO-TO-ART"},"blur-image":{"type":"blur-image","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/red-car-min.jpg","availability":"web_mobile_apps","trackingID":"BLUR-IMAGE"},"foto-a-arte":{"type":"photo-to-art","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/sample_image_digital_art.jpg","availability":"web_visionn_app","trackingID":"PHOTO-TO-ART"},"arte-digital":{"type":"digital-art","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/sample_image_digital_art.jpg","availability":"web_visionn_app","trackingID":"DIGITAL-ART"},"borrar-foto":{"type":"blur-image","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/red-car-min.jpg","availability":"web_mobile_apps","trackingID":"BLUR-IMAGE"},"editor-de-texto":{"type":"text-editor","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/bike-with-yellow-wall-min.jpg","availability":"web_mobile_apps","trackingID":"TEXT-EDITOR"},"ferramentas-de-retoque":{"type":"touch-up","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/photoeditor/samples/images/sample_4.jpg","availability":"web_mobile_apps","trackingID":"TOUCH-UP"},"touch-up":{"type":"touch-up","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/photoeditor/samples/images/sample_4.jpg","availability":"web_mobile_apps","trackingID":"TOUCH-UP"},"frames":{"type":"frames","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/balloon-girl-min.jpg","availability":"web_mobile_apps","trackingID":"FRAMES"},"marcos":{"type":"frames","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/balloon-girl-min.jpg","availability":"web_mobile_apps","trackingID":"FRAMES"},"cartoonizer":{"type":"cartoonizer","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/sample_image_digital_art.jpg","availability":"web_visionn_app","trackingID":"CARTOONIZER"},"difuminar-fotos":{"type":"blur-image","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/red-car-min.jpg","availability":"web_mobile_apps","trackingID":"BLUR-IMAGE"},"cortar-foto":{"type":"crop-photo","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/red-car-min.jpg","availability":"web_mobile_apps","trackingID":"CROP-PHOTO"},"recortar-fotos":{"type":"crop-photo","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/red-car-min.jpg","availability":"web_mobile_apps","trackingID":"CROP-PHOTO"},"efectos-de-fotos":{"type":"photo-effects","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/balloon-girl-min.jpg","availability":"web_mobile_apps","trackingID":"PHOTO-EFFECTS"},"dia-dos-namorados":{"type":"designer","template":"greeting_cards_valentines_valentines_card_1","availability":"web_app_only","trackingID":"VALENTINES-DAY"},"photo-to-art":{"type":"photo-to-art","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/sample_image_digital_art.jpg","availability":"web_visionn_app","trackingID":"PHOTO-TO-ART"},"photo-effects":{"type":"photo-effects","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/balloon-girl-min.jpg","availability":"web_mobile_apps","trackingID":"PHOTO-EFFECTS"},"desenhar-em-fotos":{"type":"digital-art","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/sample_image_digital_art.jpg","availability":"web_visionn_app","trackingID":"PHOTO-TO-CARTOON"},"editor-de-fotos":{"type":"photoeditor","availability":"web_mobile_apps","trackingID":"PHOTO-EDITOR"},"crop-photo":{"type":"crop-photo","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/red-car-min.jpg","availability":"web_mobile_apps","trackingID":"CROP-PHOTO"},"molduras":{"type":"frames","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/balloon-girl-min.jpg","availability":"web_mobile_apps","trackingID":"FRAMES"},"overlay":{"type":"overlay","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/balloon-girl-min.jpg","availability":"web_mobile_apps","trackingID":"OVERLAY"},"efeitos-de-fotos":{"type":"photo-effects","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/balloon-girl-min.jpg","availability":"web_mobile_apps","trackingID":"PHOTO-EFFECTS"},"text-editor":{"type":"text-editor","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/bike-with-yellow-wall-min.jpg","availability":"web_mobile_apps","trackingID":"TEXT-EDITOR"},"realzador-de-fotos":{"type":"photo-enhancer","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/red-car-min.jpg","availability":"web_app_only","trackingID":"PHOTO-ENHANCER"},"agradecimiento":{"type":"designer","template":"event_graphics_thank_you_cards_wedding_1","availability":"web_app_only","trackingID":"THANK-YOU"},"dia-del-amor":{"type":"designer","template":"greeting_cards_valentines_valentines_card_1","availability":"web_app_only","trackingID":"VALENTINES-DAY"},"disenos-para-canal-de-youtube":{"type":"designer","template":"social_media_headers_youtube_youtube_header_1","availability":"web_app_only","trackingID":"YOUTUBE-CHANNEL-ART"},"plantilla-de-tarjeta-de-presentacion":{"type":"designer","template":"small_business_business_cards_business_card_1","availability":"web_app_only","trackingID":"BUSINESS-CARD-TEMPLATE"},"creador-de-volantes":{"type":"designer","template":"event_graphics_flyers_flyer_1","availability":"web_app_only","trackingID":"FLYER-MAKER"},"cambiar-tamanos-de-imagenes":{"type":"resize-image","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/bike-with-yellow-wall-min.jpg","availability":"web_app_only","trackingID":"RESIZE-IMAGE"},"fondo-de-textura":{"type":"textures","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/balloon-girl-min.jpg","availability":"web_app_only","trackingID":"TEXTURE-BACKGROUND"},"destello-de-lente":{"type":"lens-flare","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/dark-sky-field-girl.jpg","availability":"web_app_only","trackingID":"LENS-FLARE"},"fabricante-de-tarjetas":{"type":"designer","template":"greeting_cards_birthday_birthday_card_1","availability":"web_app_only","trackingID":"CARD-MAKER"},"eliminador-de-fondo":{"type":"background-remover","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/bike-with-yellow-wall-min.jpg","availability":"web_app_only","trackingID":"TRANSPARENT-BACKGROUND"},"modelo-de-cartao-de-visita":{"type":"designer","template":"small_business_business_cards_business_card_1","availability":"web_app_only","trackingID":"BUSINESS-CARD-TEMPLATE"},"arte-para-youtube":{"type":"designer","template":"social_media_headers_youtube_youtube_header_1","availability":"web_app_only","trackingID":"YOUTUBE-CHANNEL-ART"},"batch":{"type":"batch","availability":"web_app_only","trackingID":"BATCH"},"creador-de-folletos":{"type":"designer","template":"event_graphics_brochures_brochure_1","availability":"web_app_only","trackingID":"BROCHURE-MAKER"},"criador-de-poster":{"type":"designer","template":"event_graphics_posters_poster_1","availability":"web_app_only","trackingID":"POSTER-MAKER"},"capa-do-facebook":{"type":"designer","template":"social_media_headers_facebook_facebook_cover_1","availability":"web_app_only","trackingID":"FACEBOOK-COVER-PHOTOS"},"fundo-texturizado":{"type":"textures","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/balloon-girl-min.jpg","availability":"web_app_only","trackingID":"TEXTURE-BACKGROUND"},"criador-de-folhetos":{"type":"designer","template":"event_graphics_flyers_flyer_1","availability":"web_app_only","trackingID":"FLYER-MAKER"},"criador-de-banner":{"type":"designer","template":"small_business_facebook_ads_facebook_ad_1","availability":"web_app_only","trackingID":"BANNER-MAKER"},"creador-de-infografia":{"type":"designer","template":"blog_tools_infographics_infographic_1","availability":"web_app_only","trackingID":"INFOGRAPHIC-MAKER"},"criador-de-infografico":{"type":"designer","template":"blog_tools_infographics_infographic_1","availability":"web_app_only","trackingID":"INFOGRAPHIC-MAKER"},"cartelista":{"type":"designer","template":"event_graphics_posters_poster_1","availability":"web_app_only","trackingID":"POSTER-MAKER"},"criador-de-cartao":{"type":"designer","template":"greeting_cards_birthday_birthday_card_1","availability":"web_app_only","trackingID":"CARD-MAKER"},"fabricante-de-banner":{"type":"designer","template":"small_business_facebook_ads_facebook_ad_1","availability":"web_app_only","trackingID":"BANNER-MAKER"},"edicao-de-fundo":{"type":"background-remover","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/bike-with-yellow-wall-min.jpg","availability":"web_app_only","trackingID":"TRANSPARENT-BACKGROUND"},"obrigado":{"type":"designer","template":"event_graphics_thank_you_cards_wedding_1","availability":"web_app_only","trackingID":"THANK-YOU"},"portadas-de-facebook":{"type":"designer","template":"social_media_headers_facebook_facebook_cover_1","availability":"web_app_only","trackingID":"FACEBOOK-COVER-PHOTOS"},"criador-de-brochura":{"type":"designer","template":"event_graphics_brochures_brochure_1","availability":"web_app_only","trackingID":"BROCHURE-MAKER"},"redimensione-imagens":{"type":"resize-image","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/bike-with-yellow-wall-min.jpg","availability":"web_app_only","trackingID":"RESIZE-IMAGE"},"reflexo-de-luz":{"type":"lens-flare","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/dark-sky-field-girl.jpg","availability":"web_app_only","trackingID":"LENS-FLARE"},"herramientas-de-retoque":{"type":"touch-up","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/photoeditor/samples/images/sample_4.jpg","availability":"web_app_only","trackingID":"TOUCH-UP"},"aprimorador-de-fotos":{"type":"photo-enhancer","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/red-car-min.jpg","availability":"web_app_only","trackingID":"PHOTO-ENHANCER"},"edit-photo":{"type":"edit-photo","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/balloon-girl-min.jpg","availability":"web_app_only","trackingID":"EDIT-PHOTO"},"textures":{"type":"textures","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/balloon-girl-min.jpg","availability":"web_app_only","trackingID":"TEXTURES"},"fathers-day":{"type":"designer","template":"greeting_cards_fathers_day_fathers_day_card_1","availability":"web_app_only","trackingID":"FATHERS-DAY"},"design-your-dream":{"type":"designer","template":"small_business_business_cards_business_card_1","availability":"web_app_only","trackingID":"DESIGN-YOUR-DREAM"},"summer":{"type":"summer","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/balloon-girl-min.jpg","availability":"web_app_only","trackingID":"SUMMER"},"brochure-maker":{"type":"designer","template":"event_graphics_brochures_brochure_1","availability":"web_app_only","trackingID":"BROCHURE-MAKER"},"graphic-designer":{"type":"designer","availability":"web_app_only","trackingID":"GRAPHIC-DESIGNER"},"mothers-day":{"type":"designer","template":"greeting_cards_mothers_day_mothers_day_card_1","availability":"web_app_only","trackingID":"MOTHERS-DAY"},"infographic-maker":{"type":"designer","template":"blog_tools_infographics_infographic_1","availability":"web_app_only","trackingID":"INFOGRAPHIC-MAKER"},"thank-you":{"type":"designer","template":"event_graphics_thank_you_cards_wedding_1","availability":"web_app_only","trackingID":"THANK-YOU"},"valentines-day":{"type":"designer","template":"greeting_cards_valentines_valentines_card_1","availability":"web_app_only","trackingID":"VALENTINES-DAY"},"flyer-maker":{"type":"designer","template":"event_graphics_flyers_flyer_1","availability":"web_app_only","trackingID":"FLYER-MAKER"},"texture-background":{"type":"textures","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/balloon-girl-min.jpg","availability":"web_app_only","trackingID":"TEXTURE-BACKGROUND"},"digital-art":{"type":"digital-art","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/sample_image_digital_art.jpg","availability":"web_app_only","trackingID":"DIGITAL-ART"},"youtube-channel-art":{"type":"designer","template":"social_media_headers_youtube_youtube_header_1","availability":"web_app_only","trackingID":"YOUTUBE-CHANNEL-ART"},"poster-maker":{"type":"designer","template":"event_graphics_posters_poster_1","availability":"web_app_only","trackingID":"POSTER-MAKER"},"banner-maker":{"type":"designer","template":"small_business_facebook_ads_facebook_ad_1","availability":"web_app_only","trackingID":"BANNER-MAKER"},"business-card-template":{"type":"designer","template":"small_business_business_cards_business_card_1","availability":"web_app_only","trackingID":"BUSINESS-CARD-TEMPLATE"},"transparent-background":{"type":"background-remover","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/bike-with-yellow-wall-min.jpg","availability":"web_app_only","trackingID":"TRANSPARENT-BACKGROUND"},"photo-enhancer":{"type":"photo-enhancer","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/red-car-min.jpg","availability":"web_app_only","trackingID":"PHOTO-ENHANCER"},"resize-image":{"type":"resize-image","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/bike-with-yellow-wall-min.jpg","availability":"web_app_only","trackingID":"RESIZE-IMAGE"},"facebook-cover-photos":{"type":"designer","template":"social_media_headers_facebook_facebook_cover_1","availability":"web_app_only","trackingID":"FACEBOOK-COVER-PHOTOS"},"card-maker":{"type":"designer","template":"greeting_cards_birthday_birthday_card_1","availability":"web_app_only","trackingID":"CARD-MAKER"},"lens-flare":{"type":"lens-flare","img":"https://d75ljpmh88vxs.cloudfront.net/app/graphics/collage/samples/dark-sky-field-girl.jpg","availability":"web_app_only","trackingID":"LENS-FLARE"},"designer":{"type":"designer","availability":"web_app_only","trackingID":"DESIGNER"},"disenador":{"type":"designer","availability":"web_app_only","trackingID":"DESIGNER"}};</script><footer class=site-footer role=contentinfo><div class=site-footer__inner><div class=site-footer__column-wrapper><a href=https://www.befunky.com/ class=site-footer__logo aria-label="BeFunky homepage">BeFunky</a><div class=site-footer__column><h6 data-lang=products class=site-footer__heading>Products</h6><a class=site-footer__link data-lang=photo_editor href=https://www.befunky.com/features/photo-editor/ >Photo Editor</a> <a class=site-footer__link data-lang=collage_maker_footer href=https://www.befunky.com/features/collage-maker/ >Collage Maker</a> <a class=site-footer__link data-lang=graphic_designer href=https://www.befunky.com/features/graphic-designer/ >Graphic Designer</a> <a class=site-footer__link data-lang=pricing href=https://www.befunky.com/pricing/ >Pricing</a> <a class=site-footer__link data-lang=befunky_mobile href=https://www.befunky.com/mobile/ >BeFunky Mobile</a> <a class=site-footer__link data-lang=visionn href=https://www.befunky.com/visionn/ >Visionn</a></div><div class=site-footer__column><h6 data-lang=features class=site-footer__heading>Features</h6><a class=site-footer__link data-lang=photo_effects href=https://www.befunky.com/features/photo-effects/ >Photo Effects</a> <a class=site-footer__link data-lang=touch_up href=https://www.befunky.com/features/touch-up/ >Touch Up</a> <a class=site-footer__link data-lang=photo_to_art href=https://www.befunky.com/features/photo-to-art/ >Photo to Art</a> <a class=site-footer__link data-lang=text_editor href=https://www.befunky.com/features/text-editor/ >Text Editor</a> <a class=site-footer__link data-lang=essential_features href=https://www.befunky.com/features/ >Essential Features</a><div tabindex=0 class="site-footer__link site-footer__link--more-features popup__parent"><string data-lang=more>More</string><svg class="icon icon-size-tiny icon--arrow"><use xmlns:xlink=http://www.w3.org/1999/xlink xlink:href=#global-arrow-down-icon></use></svg><div class="popup__container site-footer__more-features"><a class=site-footer__link data-lang=photo_enhancer href=https://www.befunky.com/features/photo-enhancer/ >Photo Enhancer</a> <a class=site-footer__link data-lang=photo_frames href=https://www.befunky.com/features/photo-frames/ >Photo Frames</a> <a class=site-footer__link data-lang=crop_photo href=https://www.befunky.com/features/crop-photo/ >Crop Photo</a> <a class=site-footer__link data-lang=blur_image href=https://www.befunky.com/features/blur-image/ >Blur Image</a> <a class=site-footer__link data-lang=resize_image href=https://www.befunky.com/features/resize-image/ >Resize Image</a><div class=popup__arrow-down></div></div></div></div><div class=site-footer__column><h6 data-lang=resources class=site-footer__heading>Resources</h6><a data-lang=getting_started class=site-footer__link href=https://www.befunky.com/getting-started/ >Getting Started</a> <a data-lang=user_guides class=site-footer__link href=https://support.befunky.com>User Guides</a> <a data-lang=faq class=site-footer__link href=https://support.befunky.com/hc/en-us/sections/200897109-FAQ>FAQ</a> <a data-lang=tutorials class=site-footer__link href="https://www.befunky.com/learn/tutorials/">Tutorials</a> <a data-lang=whats_new class=site-footer__link href="https://www.befunky.com/learn/whats-new/">What's New</a> <a data-lang=case_studies class=site-footer__link href="https://www.befunky.com/learn/case-studies/">Case Studies</a> <a data-lang=explore class=site-footer__link href=https://www.befunky.com/explore/ >Explore</a></div><div class=site-footer__column><h6 data-lang=company class=site-footer__heading>Company</h6><a data-lang=about class=site-footer__link href=https://www.befunky.com/about-us/ >About</a> <a data-lang=values class=site-footer__link href=https://www.befunky.com/about-us/#mission-values>Values</a> <a data-lang=press class=site-footer__link href=https://www.befunky.com/press/ >Press</a> <a data-lang=careers class=site-footer__link href=https://www.befunky.com/about-us/#careers>Careers</a> <a data-lang=contact class=site-footer__link href=https://support.befunky.com/hc/en-us/requests/new>Contact</a></div></div></div><div class=site-footer__inner><div class=site-footer__bottom><div class=site-footer__social><a title="BeFunky on Facebook" href=http://www.facebook.com/befunky target=_blank rel=noopener><svg class="icon icon-size-x-large"><use xmlns:xlink=http://www.w3.org/1999/xlink xlink:href=#facebook-logo-footer></use></svg> </a><a title="BeFunky on Twitter" href=https://twitter.com/befunky target=_blank rel=noopener><svg class="icon icon-size-x-large"><use xmlns:xlink=http://www.w3.org/1999/xlink xlink:href=#twitter-logo-footer></use></svg> </a><a title="BeFunky on Instagram" href=https://www.instagram.com/befunkyapp/ target=_blank rel=noopener><svg class="icon icon-size-x-large"><use xmlns:xlink=http://www.w3.org/1999/xlink xlink:href=#instagram-logo-footer></use></svg> </a><a title="BeFunky on Pinterest" href=http://www.pinterest.com/befunky target=_blank rel=noopener><svg class="icon icon-size-x-large"><use xmlns:xlink=http://www.w3.org/1999/xlink xlink:href=#pinterest-logo-footer></use></svg> </a><a title="BeFunky on LinkedIn" href=https://www.linkedin.com/company/befunky target=_blank rel=noopener><svg class="icon icon-size-x-large"><use xmlns:xlink=http://www.w3.org/1999/xlink xlink:href=#linkedin-logo-footer></use></svg></a></div><div tabindex=0 class="site-footer__language popup__parent"><p><string data-lang=page_language>Language:</string><string class=site-footer__current-language>English</string></p><svg class="icon icon-size-tiny icon--arrow"><use xmlns:xlink=http://www.w3.org/1999/xlink xlink:href=#global-arrow-down-icon></use></svg><div class="site-footer__language-choice popup__container"><a data-choose-lang=en href=https://www.befunky.com/features/text-editor/ >English</a> <a data-choose-lang=es href=https://www.befunky.com/es/opciones/editor-de-texto/ >Español</a> <a data-choose-lang=pt href=https://www.befunky.com/pt/recursos/editor-de-texto/ >Português</a> <a data-choose-lang=fr href=#>Français</a> <a data-choose-lang=it href=#>Italiano</a><div class=popup__arrow-down></div></div></div><p class=site-footer__terms>&copy; 2019 BeFunky Inc. <a data-lang=terms href=https://www.befunky.com/terms/ >Terms</a> &amp; <a data-lang=privacy_policy href=https://www.befunky.com/privacy/ >Privacy Policy</a></p></div></div></footer><div class="layout-guide layout-guide--outer"></div><div class="layout-guide layout-guide--inner"></div><div style="display: none"><div id=get_started_modal class="modal get-started"><h2 class=get-started__heading data-lang=get_started_heading></h2><div class=get-started__cards><div class=get-started__card><img class=get-started__image src="data:image/svg+xml,%3Csvg style='background:%23EDEDED' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 288'%3E%3C/svg%3E" data-src="https://images.befunky.com/site/get-started-modal/editor.jpg" alt=""><div class=get-started__card-content><p class=get-started__caption data-lang=get_started_editor></p><a href=https://www.befunky.com/create/ data-route class="button button--dark-blue button--x-large button--fullwidth" data-lang=edit_photo></a></div></div><div class=get-started__card><img class=get-started__image src="data:image/svg+xml,%3Csvg style='background:%23EDEDED' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 288'%3E%3C/svg%3E" data-src="https://images.befunky.com/site/get-started-modal/collage.jpg" alt=""><div class=get-started__card-content><p class=get-started__caption data-lang=get_started_collage></p><a href=https://www.befunky.com/create/collage/ data-route class="button button--dark-blue button--x-large button--fullwidth" data-lang=create_collage></a></div></div><div class=get-started__card><img class=get-started__image src="data:image/svg+xml,%3Csvg style='background:%23EDEDED' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 288'%3E%3C/svg%3E" data-src="https://images.befunky.com/site/get-started-modal/designer.jpg" alt=""><div class=get-started__card-content><p class=get-started__caption data-lang=get_started_designer></p><a href=https://www.befunky.com/create/designer/ data-route class="button button--dark-blue button--x-large button--fullwidth" data-lang=create_design></a></div></div></div></div></div></div> <div class="popup-holder" style="display: none;">
+
+    <div id="teaser_modal" class="modal modal-card modal-teaser">
+        <div class="modal-card__image"></div>
+        <div class="modal-card__col-right">
+            <h2 class="h4" data-lang="teaser_modal_heading">Upgrade to use this photo effect and get access to all BeFunky Plus Features</h2>
+            <p id="teaser_modal_body" data-lang="teaser_default">BeFunky's premium features make your photos and design projects stand out from the crowd.</p>
+            <button id="teaser_modal_upgrade" data-lang="upgrade_now" class="button button--blue-gradient button--xx-large modal-card__button">Upgrade Now</button>
+            <p class="modal-card__sign-in">
+                <string data-lang="teaser_modal_have_an_account">Already have an account?</string>
+                <a data-lang="sign_in" id="teaser_modal_sign_in" href="#"> Sign In</a>
+            </p>
+        </div>
+    </div>
+
+</div>
+<div class="popup-holder"  style="display: none;">
+    <div id="sign_in_modal" class="modal sign-in-modal">
+        <div class="modal__header modal__header--sign-in">
+            <h2 data-lang="sign_in_modal_heading" class="h3">Welcome Back! Please Sign In</h2>
+            <p>
+                <string data-lang="sign_in_modal_sub_heading">New to BeFunky?</string>
+                <a data-lang="register_here" data-bf="sign-in__register" href="#" id="sign_in_modal_create_account">Register here</a>
+            </p>
+        </div>
+        <div class="form-wrapper">
+            <div class="button-group button-group--dual">
+                <button id="sign_in_modal_facebook" data-bf="sign-in__facebook" class="button button--x-large button--light-grey modal__social-login">
+                    <svg class="icon icon-size-large">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook-social-icon"></use>
+                    </svg>
+                    <string data-lang="use_facebook">Use Facebook</string>
+                </button>
+                <button id="sign_in_modal_google" data-bf="sign-in__google" class="button button--x-large button--light-grey modal__social-login">
+                    <svg class="icon icon-size-large">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#google-icon"></use>
+                    </svg>
+                    <string data-lang="use_google">Use Google</string>
+                </button>
+            </div>
+            <p class="modal__form-divider form-divider"><span data-lang="or_email">or email</span></p>
+            <form id="sign_in_form" action="javascript:;">
+                <div class="form-errors"></div>
+                <div class="material-field">
+                    <input
+                        class="material-field__input"
+                        name="_bfn__email"
+                        type="text"
+                        id="sign_in_form_user_email"
+                        required
+                        autocomplete="email"
+                        data-bf="sign-in__email"
+                    >
+                    <p data-lang="error_invalid_email" class="material-field__error">Please enter your email</p>
+                    <label data-lang="email_label" class="material-field__label" for="sign_in_form_user_email">Email</label>
+                </div>
+                <div class="material-field">
+                    <input
+                        class="material-field__input"
+                        name="_bfn__password"
+                        type="password"
+                        id="sign_in_form_user_name"
+                        required
+                        autocomplete="current-password"
+                        maxlength="100"
+                        data-bf="sign-in__password"
+                    >
+                    <p data-lang="sign_in_modal_password_error" class="material-field__error">Please enter a password</p>
+                    <label data-lang="password" class="material-field__label" for="sign_in_form_user_email">Password</label>
+                </div>
+                <div class="captcha"></div>
+                <button
+                    data-lang="sign_in"
+                    data-bf="sign-in__submit"
+                    type="submit"
+                    class="modal__form-submit button button--fullwidth button--xx-large button--dark-blue"
+                    style="display: block">
+                    Sign In
+                </button>
+            </form>
+            <p class="modal__footer-text">
+                <a id="sign_in_modal_forgot_password" data-lang="sign_in_modal_forgot_password" data-bf="sign-in__forgot-password" href="#">Forgot your password?</a>
+            </p>
+        </div>
+
+    </div>
+
+    <div id="register_modal" class="modal register-modal">
+        <div class="modal__header modal__header--register">
+            <h2 data-lang="register_modal_heading" class="register-modal__default-heading h3">Register With BeFunky</h2>
+            <p><string data-lang="register_modal_sub_heading">Already registered?</string> <a data-lang="register_modal_sign_in" data-bf="register__sign-in" href="#" id="register_modal_has_account">Sign in here</a></p>
+        </div>
+        <div class="form-wrapper">
+            <div class="button-group button-group--dual">
+                <button id="register_modal_facebook" data-bf="register__facebook" class="button button--x-large button--light-grey modal__social-login">
+                    <svg class="icon icon-size-large">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook-social-icon"></use>
+                    </svg>
+                    <string data-lang="use_facebook">Use Facebook</string>
+                </button>
+                <button id="register_modal_google" data-bf="register__google" class="button button--x-large button--light-grey modal__social-login">
+                    <svg class="icon icon-size-large">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#google-icon"></use>
+                    </svg>
+                    <string data-lang="use_google">Use Google</string>
+                </button>
+            </div>
+            <p class="modal__form-divider form-divider"><span data-lang="or_email">OR EMAIL</span></p>
+            <form id="register_form" action="javascript:;">
+                <div class="form-errors"></div>
+                <div class="material-field">
+                    <input
+                        id="register_form_user_email"
+                        data-bf="register__email"
+                        name="_bfn__email"
+                        class="material-field__input"
+                        type="text"
+                        required
+                        autocomplete="email"
+                    >
+                    <p data-lang="error_invalid_email" class="material-field__error">Please enter your email</p>
+                    <label data-lang="email_label" class="material-field__label" for="register_form_user_email">Email</label>
+                </div>
+                <div class="material-field">
+                    <input
+                        id="register_form_user_confirm_email"
+                        data-bf="register__confirm-email"
+                        name="_bfn__emailAgain"
+                        class="material-field__input"
+                        type="text"
+                        required
+                        autocomplete="email"
+                    >
+                    <p data-lang="error_email_mismatch" class="material-field__error">The emails you've entered do not match</p>
+                    <label
+                        data-lang="register_modal_confirm_email"
+                        class="material-field__label"
+                        for="register_form_user_confirm_email">
+                        Confirm your email
+                    </label>
+                </div>
+                <div class="material-field">
+                    <input
+                        id="register_form_user_password"
+                        data-bf="register__password"
+                        name="_bfn__password"
+                        class="material-field__input"
+                        type="password"
+                        maxlength="100"
+                        required
+                        autocomplete="new-password"
+                    >
+                    <p data-lang="register_modal_password_error" class="material-field__error">Please enter a password</p>
+                    <label
+                        data-lang="password"
+                        class="material-field__label"
+                        for="register_form_user_password">
+                        Password
+                    </label>
+                </div>
+                <div class="captcha"></div>
+                <button
+                    data-lang="register_modal_create_account_button"
+                    data-bf="register__submit"
+                    type="submit"
+                    class="modal__form-submit button button--fullwidth button--xx-large button--dark-blue"
+                    style="display: block">
+                    Create Your Account
+                </button>
+            </form>
+            <p class="modal__footer-text">
+                <string data-lang="register_modal_create_account_terms">By creating an account you agree to our</string>
+                <a data-lang="register_modal_terms_of_use" data-bf="register__terms" href="https://www.befunky.com/terms/?cmfrm=1" target="_blank">Terms of Use</a>
+            </p>
+        </div>
+
+    </div>
+
+    <div id="reset_password_modal" class="modal reset-password-modal">
+        <header class="modal__header reset-pricing-header">
+            <h2 data-lang="reset_password_modal_reset_pw" class="h3 reset-pricing-header__heading">Reset Your Password</h2>
+            <p data-lang="reset_password_modal_enter_email" >Enter your email and we'll send you a link to reset your password</p>
+        </header>
+        <div class="form-wrapper">
+            <form id="reset_password_form" action="javascript:;">
+                <div class="form-errors"></div>
+                <div class="material-field">
+                    <input class="material-field__input" type="text" data-bf="reset-password__email" name="_bfn__fp_email" required autocomplete="email">
+                    <p data-lang="error_invalid_email" class="material-field__error">Please enter your email</p>
+                    <label data-lang="email_label" class="material-field__label" for="email">Email</label>
+                </div>
+                <div class="captcha"></div>
+                <button
+                    data-lang="reset_password_modal_submit_button"
+                    data-bf="reset-password__submit"
+                    type="submit"
+                    class="modal__form-submit button button--fullwidth button--xx-large button--dark-blue"
+                    style="display: block">
+                    Submit
+                </button>
+            </form>
+            <p class="reset-password-modal__login-link"><a data-lang="reset_password_modal_remember" data-bf="reset-password__remember" href="#" id="reset_password_modal_sign_in">If you remember your password you can sign in here</a></p>
+        </div>
+    </div>
+
+
+</div>
+<div class="popup-holder"  style="display: none;">
+    <div id="vimeo_modal"></div>
+    <div id="pricing_modal" class="modal pricing-modal">
+        <header class="modal__header modal__header--pricing modal__header--tall">
+            <h2 data-lang="pricing_modal_heading">Go all in with BeFunky Plus</h2>
+            <p data-lang="pricing_modal_subline1" class="pricing-modal__sub-heading">One price for all Plus features, no hidden fees, cancel anytime.</p>
+            <form class="pricing-form" action="javascript:;">
+                <label class="radio-button pricing-form__label">
+                    <input id="pricing_modal_plan_monthly" type="radio" name="plan" value="monthly" checked>
+                    <span class="radio-button__circle" data-bf="upgrade__monthly__radio"></span>
+                    <div class="pricing-form__label-text">
+                        <span class="pricing-form__price h4">$6<sup>.99</sup></span> <sub data-lang="per_month">/mo</sub><br>
+                        <span class="pricing-form__label-line" data-lang="billed_monthly">Billed monthly</span>
+                    </div>
+                </label>
+                <label class="radio-button pricing-form__label">
+                    <input id="pricing_modal_plan_yearly" type="radio" name="plan" value="yearly">
+                    <span class="radio-button__circle" data-bf="upgrade__yearly__radio"></span>
+                    <div class="pricing-form__label-text">
+                        <span class="pricing-form__price h4">$4<sup>.99</sup></span> <sub data-lang="per_month">/mo</sub><br>
+                        <span class="pricing-form__label-line" data-lang="billed_annually">Billed annually</span>
+                        <span class="pricing-form__label-line"><span data-lang="most_popular" class="pricing-form__amount-saved">Most Popular</span></span>
+                    </div>
+                    
+                </label>
+            </form>
+            <button data-lang="upgrade_now" id="pricing_modal_upgrade" class="button button--xx-large button--dark-blue pricing-modal__upgrade-button" data-bf="upgrade__upgrade-now">Upgrade Now</button>
+        </header>
+
+        <section class="pricing-modal__section">
+            <h2 data-lang="pricing_modal_subline2" class="pricing-modal__heading h4">Unlock our most powerful creative tools</h2>
+
+            <div class="pricing-modal__card-wrapper">
+                <div class="pricing-modal__card">
+                    <svg class="icon icon-selected pricing-checkbox">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#global-apply-icon"></use>
+                    </svg>
+                    <h3 data-lang="pricing_modal_cutout_heading" class="pricing-modal__card-header h6">Remove objects from your photos</h3>
+                    <p data-lang="pricing_modal_cutout_body" class="pricing-modal__card-body">
+                        Whether you remove the object with our Cutout tool or use the Clone tool to cover it up, BeFunky Plus has the tools you need to remove anything from any photo.
+                    </p>
+                </div>
+                <div class="pricing-modal__card">
+                    <svg class="icon icon-selected pricing-checkbox">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#global-apply-icon"></use>
+                    </svg>
+                    <h3 data-lang="pricing_modal_artsy_heading" class="pricing-modal__card-header h6">Turn your photos into art</h3>
+                    <p data-lang="pricing_modal_artsy_body" class="pricing-modal__card-body">
+                        Take unique to the next level. BeFunky Plus has a collection of Artsy effects that’ll transform your photos into cartoons, paintings, sketches, and more!
+                    </p>
+                </div>
+                <div id="pricing_modal_card_batch_processing" class="pricing-modal__card pricing-modal__card--hide-in-flash">
+                    <svg class="icon icon-selected pricing-checkbox">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#global-apply-icon"></use>
+                    </svg>
+                    <h3 data-lang="pricing_modal_batch_heading" class="pricing-modal__card-header h6">Edit hundreds of photos at once</h3>
+                    <p data-lang="pricing_modal_batch_body" class="pricing-modal__card-body">
+                        With Batch Processing you can crop, resize, and edit hundreds of photos all at the same time.
+                    </p>
+                    <p class="pricing-modal__card-watch"><a id="batch_processing_video" href="#" data-lang="watch_it_in_action">Watch it in action</a></p>
+                </div>
+                <div class="pricing-modal__card">
+                    <svg class="icon icon-selected pricing-checkbox">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#global-apply-icon"></use>
+                    </svg>
+                    <h3 data-lang="pricing_modal_enhance_heading" class="pricing-modal__card-header h6">Enhance the brilliance of your photos</h3>
+                    <p data-lang="pricing_modal_enhance_body" class="pricing-modal__card-body">
+                        Use our Fill Light, Vibrance, and Clarity tools to fine tune your photos, or let our Enhance DLX tools analyze your photos and fix them where they need to be fixed
+                    </p>
+                </div>
+                <div id="pricing_modal_card_designer" class="pricing-modal__card">
+                    <svg class="icon icon-selected pricing-checkbox">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#global-apply-icon"></use>
+                    </svg>
+                    <h3 data-lang="pricing_modal_templates_heading" class="pricing-modal__card-header h6">Design Like a Pro</h3>
+                    <p data-lang="pricing_modal_templates_body" class="pricing-modal__card-body">
+                        Unlock hundreds of professionally designed templates that’ll give you the starting point you need to easily create eye-catching designs.
+                    </p>
+                </div>
+                <div id="pricing_modal_card_collage_wizard" class="pricing-modal__card">
+                    <svg class="icon icon-selected pricing-checkbox">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#global-apply-icon"></use>
+                    </svg>
+                    <h3 data-lang="pricing_modal_collages_heading" class="pricing-modal__card-header h6">Perfect collages, everytime</h3>
+                    <p data-lang="pricing_modal_collages_body" class="pricing-modal__card-body">
+                        No matter how many photos you throw at it, one click of our Collage Wizard and you’ll always get a great looking collage that doesn’t resize or crop any of your photos.
+                    </p>
+                    <p class="pricing-modal__card-watch"><a id="collage_wizard_video" href="#" data-lang="watch_it_in_action">Watch it in action</a></p>
+                </div>
+                <div class="pricing-modal__card pricing-modal__card--hide-in-flash">
+                    <svg class="icon icon-selected pricing-checkbox">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#global-apply-icon"></use>
+                    </svg>
+                    <h3 data-lang="pricing_modal_background_heading" class="pricing-modal__card-header h6">Turn backgrounds transparent</h3>
+                    <p data-lang="pricing_modal_background_body" class="pricing-modal__card-body">
+                        With our Background, Cutout, and Replace Color tools, it’s never been easier to create transparent backgrounds for logos, product photos, and more!
+                    </p>
+                </div>
+                <div class="pricing-modal__card">
+                    <svg class="icon icon-selected pricing-checkbox">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#global-apply-icon"></use>
+                    </svg>
+                    <h3 data-lang="pricing_modal_touchup_heading" class="pricing-modal__card-header h6">Flawless portraits, everytime</h3>
+                    <p data-lang="pricing_modal_touchup_body" class="pricing-modal__card-body">
+                        With the Touch Up tools only available with BeFunky Plus, every portrait will have blemish free, perfect skin.
+                    </p>
+                </div>
+                <div class="pricing-modal__card">
+                    <svg class="icon icon-selected pricing-checkbox">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#global-apply-icon"></use>
+                    </svg>
+                    <h3 data-lang="pricing_modal_effects_heading" class="pricing-modal__card-header h6">Create a look as unique as you are</h3>
+                    <p data-lang="pricing_modal_effects_body" class="pricing-modal__card-body">
+                        Whether you want the retro look of our Chromatic and Vintage Colors effects or a traditional black and white look, with hundreds of befunky plus effects you’ll always get the look you want.
+                    </p>
+                </div>
+                <div class="pricing-modal__card">
+                    <svg class="icon icon-selected pricing-checkbox">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#global-apply-icon"></use>
+                    </svg>
+                    <h3 data-lang="pricing_modal_flares_heading" class="pricing-modal__card-header h6">Use light to your advantage</h3>
+                    <p data-lang="pricing_modal_flares_body" class="pricing-modal__card-body">
+                        Whether you want to add a sun-soaked look with Lens Flares or enhance the lights within your photos with Glow, BeFunky Plus has tools that’ll put light to work for you.
+                    </p>
+                    <p class="pricing-modal__card-watch"><a id="lens_flare_video" href="#" data-lang="watch_it_in_action">Watch it in action</a></p>
+                </div>
+                <div class="pricing-modal__card">
+                    <svg class="icon icon-selected pricing-checkbox">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#global-apply-icon"></use>
+                    </svg>
+                    <h3 data-lang="pricing_modal_focus_heading" class="pricing-modal__card-header h6">Put the focus on your subject</h3>
+                    <p data-lang="pricing_modal_focus_body" class="pricing-modal__card-body">
+                        Create a colored Vignette or use Funky Focus to blur everything but your subject, either way, the focus of your photo will always be on the subject.</p>
+                </div>
+                <div class="pricing-modal__card">
+                    <svg class="icon icon-selected pricing-checkbox">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#global-apply-icon"></use>
+                    </svg>
+                    <h3 data-lang="pricing_modal_reshape_heading" class="pricing-modal__card-header h6">Reshape objects in your images</h3>
+                    <p data-lang="pricing_modal_reshape_body" class="pricing-modal__card-body">
+                        Whether you want to correct for lens warp, fix a jawline, or soften and blend areas of your photos - Our Reshape tool is the perfect BeFunky Plus feature to get the job done.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-modal__section">
+            <h2 data-lang="pricing_modal_section_heading" class="pricing-modal__heading h4">Also Included With BeFunky Plus</h2>
+            <div class="pricing-modal__features-wrapper">
+                <div class="pricing-modal__feature">
+                    <h3 data-lang="pricing_modal_graphic_heading" class="pricing-modal__feature-header h6">The perfect Graphic for any project</h3>
+                    <p data-lang="pricing_modal_graphic_body" class="pricing-modal__feature-body">Finding the right graphic has never been easier. With BeFunky Plus you’ll gain access to thousands of premium graphics</p>
+                </div>
+                <div class="pricing-modal__feature">
+                    <h3 data-lang="pricing_modal_editing_heading" class="pricing-modal__feature-header h6">Seamless photo editing in Collage Maker and Designer</h3>
+                    <p data-lang="pricing_modal_editing_body" class="pricing-modal__feature-body">Edit photos from Collage Maker and Designer. Keep your workflow flowing, open any photo from your collage or design project in the photo editor with the click of a button</p>
+                </div>
+                <div class="pricing-modal__feature">
+                    <h3 data-lang="pricing_modal_auto_enhance_heading" class="pricing-modal__feature-header h6">Perfect photos in a single click</h3>
+                    <p data-lang="pricing_modal_auto_enhance_body" class="pricing-modal__feature-body">Auto Enhance is a smart enhancement tool that simultaneously evens out exposure, boosts saturation, and increases sharpness where your photos need it most</p>
+                </div>
+                <div class="pricing-modal__feature">
+                    <h3 data-lang="pricing_modal_levels_heading" class="pricing-modal__feature-header h6">Precise exposure controls</h3>
+                    <p data-lang="pricing_modal_levels_body" class="pricing-modal__feature-body">With our Levels tool, you’ll have complete control over the exposure of your images</p>
+                </div>
+                <div class="pricing-modal__feature">
+                    <h3 data-lang="pricing_modal_overlaps_heading" class="pricing-modal__feature-header h6">Add a new layer of creativity</h3>
+                    <p data-lang="pricing_modal_overlaps_body" class="pricing-modal__feature-body">Our collection of premium Overlays give you the creative power to let your photo peek through in all the right places</p>
+                </div>
+                <div class="pricing-modal__feature">
+                    <h3 data-lang="pricing_modal_border_heading" class="pricing-modal__feature-header h6">Wrap your photos in style</h3>
+                    <p data-lang="pricing_modal_border_body" class="pricing-modal__feature-body">Unlock a massive collection of customizable digital photo frames and borders</p>
+                </div>
+                <div class="pricing-modal__feature">
+                    <h3 data-lang="pricing_modal_textural_heading" class="pricing-modal__feature-header h6">Add a textural element to your photos</h3>
+                    <p data-lang="pricing_modal_textural_body" class="pricing-modal__feature-body">From bricks to metal to paper, give your images the appearance of being printed on a textured medium</p>
+                </div>
+                <div class="pricing-modal__feature">
+                    <h3 data-lang="pricing_modal_collage_heading" class="pricing-modal__feature-header h6">Complete your collage with a pattern</h3>
+                    <p data-lang="pricing_modal_collage_body" class="pricing-modal__feature-body">Whether you want to use a pattern for your collage border or cell, you’ll always find the perfect pattern with BeFunky Plus
+                    </p>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <!---->
+    <div id="payment_modal" class="modal payment-modal">
+        <header class="modal__header modal__header--payment modal__header--tall">
+            <h2 data-lang="payment_modal_heading" class="h3">Confirm Your Plan to Get Started</h2>
+            <form class="pricing-form" action="javascript:;">
+                <label class="radio-button pricing-form__label">
+                    <input id="payment_modal_plan_monthly" type="radio" name="plan" value="monthly" checked>
+                    <span class="radio-button__circle" data-bf="confirm-upgrade__monthly__radio"></span>
+                    <div class="pricing-form__label-text">
+                        <span class="pricing-form__price h4">$6<sup>.99</sup></span> <sub data-lang="per_month">/mo</sub><br>
+                        <span class="pricing-form__label-line" data-lang="billed_monthly">Billed monthly</span>
+                    </div>
+                </label>
+                <label class="radio-button pricing-form__label">
+                    <input id="payment_modal_plan_yearly" type="radio" name="plan" value="yearly">
+                    <span class="radio-button__circle" data-bf="confirm-upgrade__yearly__radio"></span>
+                    <div class="pricing-form__label-text">
+                        <span class="pricing-form__price h4">$4<sup>.99</sup></span> <sub data-lang="per_month">/mo</sub><br>
+                        <span class="pricing-form__label-line" data-lang="billed_annually">Billed annually</span>
+                        <span class="pricing-form__label-line"><span data-lang="most_popular" class="pricing-form__amount-saved">Most Popular</span></span>
+                    </div>
+                </label>
+            </form>
+        </header>
+        <div class="form-wrapper">
+            <form id="payment_modal_form" action="javascript:;">
+
+                <input type="hidden" name="mode" value="charge" />
+                <input type="hidden" name="period" value="monthly" />
+                <input type="hidden" data-stripe="name" id="payment_modal__bfn__cc-email" name="_bfn__cc-email" />
+
+                <div class="form-errors"></div>
+
+                <div class="material-field">
+                    <input type="text" name="cc-holdername" class="material-field__input" id="payment_modal_card_holder_name" data-bf="confirm-upgrade__cc-holdername" required>
+                    <p data-lang="name_on_card" class="material-field__error">Please enter the name on the card</p>
+                    <label data-lang="payment_modal_cc_name" class="material-field__label" for="payment_modal_card_holder_name">Name on Card</label>
+                </div>
+
+                <div class="material-field">
+                    <div id="payment_modal_card_number" class="material-field__stripe-input" data-bf="confirm-upgrade__cc-number"></div>
+                    <p class="material-field__error"></p>
+                    <label data-lang="payment_modal_card_number" class="material-field__label" for="payment_modal_card_number" data-tid="card_number_label">Card Number</label>
+                    <div id="payment_modal_card_type" class="payment-modal__card-type"></div>
+                </div>
+
+                <div class="material-row" style="margin-top: -1rem">
+                    <div class="material-field material-field--half-width">
+                        <div id="payment_modal_card_expiry" class="material-field__stripe-input" data-bf="confirm-upgrade__exipiration"></div>
+                        <p class="material-field__error"></p>
+                        <label class="material-field__label" for="payment_modal_card_expiry">MM/YY</label>
+                    </div>
+
+                    <div class="material-field material-field--half-width">
+                        <div id="payment_modal_card_cvc" class="material-field__stripe-input" data-bf="confirm-upgrade__cvc"></div>
+                        <p class="material-field__error"></p>
+                        <label class="material-field__label" for="payment_modal_card_cvc">CVC</label>
+                    </div>
+                </div>
+            <p id="payment_modal_summary" data-lang="billing_summary_annual" class="modal__footer-text"></p>
+                <button
+                    type="submit"
+                    class="modal__form-submit button button--fullwidth button--xx-large button--dark-blue"
+                    style="display: block"
+                    data-bf="confirm-upgrade__submit">
+                    Pay 34.95 USD
+                </button>
+            </form>
+            <div class="payment-modal__digicert">
+                <div class="digicert"></div>
+                <p data-lang="payment_modal_digicert">All Major credit cards accepted. Your information is 100% secure</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div id="reklamDiv" class="top-reklam-normal" style="display: none; background-color:#373842 !important;">
+	<div id="relamIc" style="position: relative;" class="top-reklam-normal">
+		<div id="0x00001001"  style="width:auto !important; display:table !important; height: 100px; z-index: 999; margin: auto;">
+					</div>
+	</div>
+	<div id="socialSharingDiv">
+		<span style="background-color:#373842 !important;color:#ededed !important; font-family:Work Sans, sans-serif !important; font-size:15px !important; font-weight: 400 !important; text-align:left !important;-webkit-font-smoothing: antialiased !important; -moz-osx-font-smoothing: grayscale;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;text-size-adjust: 100%;">
+		Want to remove ads?<br>
+		<a href="https://www.befunky.com/features/befunky-plus/"
+			class="for-dark"
+			onclick="try{if(document.getElementById(BeFunky.Params.swfId) != null && typeof document.getElementById(BeFunky.Params.swfId).upgradePanelListener != 'undefined'){document.getElementById(BeFunky.Params.swfId).upgradePanelListener('AD_AREA');} else {BeFunky.openUpgradePanel('AD_AREA');}} catch(err){} return false;">
+			Upgrade to Plus
+		</a>
+		</span>
+	</div>
+</div>
+<div id="0x00001002" style="position: fixed; display:none; right: 0px; top: 0px; padding-left:5px; padding-top:5px; z-index: 998; width: 170px; height: 100%; background-color:#3E4049;">
+	<div id="rightReklamIc" style="width:160px; margin: 0px !important; position: relative !important;">
+			</div>
+</div>
+
+<div id="dynamic-content-state" style="display: none;">
+    <div class="logo">
+        <a href="https://www.befunky.com/"><img src="https://images.befunky.com/site/logo-dark1.svg" alt="BeFunky.me"></a>
+    </div>
+    <div class="message-box" style="display: none;">
+        <span>Please authorize BeFunky to edit your photos stored at Google.</span><br>
+        <a href="javascript:void(0)" class="btn googleDriveLoginBtn" style="display: block; ">Authorize</a>
+    </div>
+    <div id="loader" style="display: none;">Loading...<br><span style="font-size:17px;"></span>
+    </div>
+</div>
+<a href="javascript:void(0);" style="display: none;" id="chrome-extension-button" data-url=""></a>
+<script>window.befunkyCoreJsLoadHandler=function(){ console.log("Global (core) JS loaded"); window.scriptHasLoaded("global"); };</script><script src="/web/js/befunky.core.45858171f0.js" onload="window.befunkyCoreJsLoadHandler();"></script><script>
+        window.scriptsOnLoadHandler = function(){ console.log("Scripts JS loaded"); window.scriptHasLoaded("scripts"); window.scriptsLoadTime = performance.now(); }; 
+        window.scriptsOnErrorHandler = function(error){ console.log("Scripts JS load error", error); }; 
+        window.bundleOnLoadHandler = function(){ console.log("Bundle JS loaded"); window.scriptHasLoaded("app"); window.appBundleLoadTime = performance.now(); }; 
+        window.bundleOnErrorHandler = function(error){ console.log("Bundle JS load error ", error); };
+    </script><script  src="/web/js/scripts.6f2b142a98.js" onload="window.scriptsOnLoadHandler();" onerror="window.scriptsOnErrorHandler();"></script><script  src="/web/js/bundle.9e473baed6.js"  onload="window.bundleOnLoadHandler();" onerror="window.bundleOnErrorHandler();"></script><script src="/web/js/dplV21_api.js" async></script><script>initialUserStatus.then(function(r){ if (!r.data || r.data.pl !== '1') { var script = document.createElement('script'); script.src = 'https://js.stripe.com/v3/'; document.body.appendChild(script); script.onload = function() {window.stripe = Stripe('pk_live_fxaTl8eYeROaXihpwaf0zv6s');} } }) </script><script src="/web/js/mix_panel.min.0.0.28.js" async></script><script src="/web/js/bfn_gaV20.js" async></script><script src="/web/js/sentry-5.8.0.min.js" async onload="window.onSentryLoaded()"></script><script>(function(i,s,o,g,r,a,m){i['ProfitWellObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);})(window,document,'script','https://dna8twue3dlxq.cloudfront.net/js/profitwell.js','profitwell');profitwell('auth_token', 'c6d76136814e344ffb42d42a0d67467d');</script><script>initialUserStatus.then(function(r){ if (r.data && r.data.pl === '1' && r.data.email) { profitwell('user_email', r.data.email); } }) </script> </body></html>
